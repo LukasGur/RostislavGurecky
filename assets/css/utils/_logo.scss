@@ -1,0 +1,17 @@
+.u-logo {
+    width: 2.5rem;
+    
+    &__R {
+        fill: #535352;
+        transition: 0.2s;
+    }
+
+    &__G {
+        fill: #ed6e04;
+    }
+
+}
+
+a .u-logo:hover .u-logo__R {
+    fill: #ed6e04;
+}

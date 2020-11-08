@@ -1,0 +1,55 @@
+.t-skew-effect {
+    transform: skew(0, 3deg);
+    > * {
+        transform: skew(0, -3deg);
+    }
+}
+
+.t-float-right {
+    float: right;
+}
+
+.t-space-pre {
+    white-space: pre;
+}
+
+.t-d-none {
+    display: none;
+
+    &--important {
+        display: none !important;
+    }
+}
+
+.t-bg {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            background-color: $color;
+        }
+    }
+}
+
+.t-text {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            color: $color;
+            fill: $color;
+        }
+    }
+}
+
+.t-mt {
+    @each $proportion in $proportions {
+        &-#{$proportion} {
+            margin-top: $proportion;
+        }
+    }
+}
+
+.t-mb {
+    @each $proportion in $proportions {
+        &-#{$proportion} {
+            margin-bottom: $proportion;
+        }
+    }
+}

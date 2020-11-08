@@ -1,0 +1,51 @@
+.o-header {
+    width: 100%;
+    z-index: 1000;
+    background-color: map-get($colors, white );
+    position: fixed;
+    
+    &__contact {
+        background-color: map-get($colors, orange );
+        padding: 0.2rem;
+    }
+
+    &__contact-container {
+        display: flex;
+    }
+
+    &__contact-icon {
+        height: 0.8rem;
+        margin-right: 0;
+
+        path {
+            transition: 0.2s;
+            fill: map-get($colors, white );
+        }
+    }
+
+    &__contact-item {
+        color: map-get($colors, white );
+        text-decoration: none;
+        margin-right: 1.3rem;
+        font-size: .7rem ;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: #ffebdb;
+
+            .o-header__contact-icon path {
+                fill: #ffebdb;
+            }
+        }
+    }
+
+    &__menu-container {
+        display: flex;
+    }
+
+
+    &__link-logo {
+        padding: 10px 0;
+    }
+}

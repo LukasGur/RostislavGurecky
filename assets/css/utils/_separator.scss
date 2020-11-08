@@ -1,0 +1,13 @@
+.u-separator {
+    &__horizontal {
+        border: 1px solid map-get($colors, white );
+        transform: skew(-13deg);
+        position: relative;
+        height: 12rem;
+        top: 7rem;
+
+        @media(max-width: 1129px) {
+            display: none;
+        }
+    }
+}

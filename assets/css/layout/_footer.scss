@@ -1,0 +1,132 @@
+.o-footer {
+    padding: 5rem 0;
+    overflow: hidden;
+    background-color: map-get($colors, orange );
+    color: map-get($colors, white );
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__section {
+        max-width: 200px;
+
+        &--brand {
+            max-width: 300px;
+        }
+
+    }
+
+    &__svg {
+        height: 150px;
+        width: 160px;
+        &--hover-effect {
+            transition: 0.2s;
+        }
+    }
+
+    &__title {
+        text-decoration: none;
+        color: map-get($colors, white );
+        transition: 0.2s;
+
+        &:hover {
+            color: map-get($colors, orange-dark );
+            text-decoration: underline;
+
+            .o-footer__svg--hover-effect {
+                fill: map-get($colors, orange-dark );
+            }
+        }
+    }
+
+    &__noltio-logo {
+        width: 50px;
+        margin-left: 0.3rem;
+        position: relative;
+        top: 2.5px;
+    }
+
+    &__noltio-link {
+        font-size: 0.68rem;
+        color: map-get($colors, gray );
+        padding-top: 0.2rem;
+        text-decoration: none;
+        transition: 0.2s;
+        border-bottom: 1px solid map-get($colors, white );
+
+        &:hover {
+            border-bottom: 1px solid map-get($colors, gray-light );
+        }
+    }
+
+    &__list {
+
+    }
+
+    &__list-item {
+        margin-top: 0.5rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        position: relative;
+
+
+        &::before {
+            content: '>';
+            color: map-get($colors, white );
+            position: absolute;
+            left: -10px;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            color: map-get($colors, orange-dark );
+
+            &::before {
+                left: -3px;
+                color: map-get($colors, orange-dark );
+            }
+            
+            .o-footer__list-link {
+                color: map-get($colors, orange-dark );
+                padding-left: 10px;;
+            }
+        }
+
+    }
+
+    &__list-link {
+        color: map-get($colors, white );
+        text-decoration: none;
+        transition: 0.2s;
+        width: 100%;
+
+    }
+
+    &__badge {
+        color: map-get($colors, gray );
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem 3rem;
+    
+        background-color: map-get($colors, white );
+        box-shadow:  20px 20px 60px #c95e03, 
+                -20px -20px 60px #ff7f05;
+        border: #f0f0f0 1px solid;
+    
+        > * {
+            display: block;
+        }
+    }
+
+    &__badge-copyright {
+        margin-top: 0.1rem;
+    }
+
+}

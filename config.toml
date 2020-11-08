@@ -1,0 +1,30 @@
+# basic site settings
+title = "Rostislav Gurecky"
+baseURL = "https://rostislavgurecky.cz/"
+
+# language settings
+languageCode = "cs-cz"
+defaultContentLanguage = "cs"
+
+# disabling taxonomy generator
+disableKinds = ["taxonomy", "term"]
+
+# data settings
+enableRobotsTXT = true
+metaDataFormat = "yaml"
+
+# sitemap output
+[sitemap]
+filename = "sitemap.xml"
+
+[params]
+    domain = "https://rostislavgurecky.cz"
+    googleAnalyticsId = "UA-155090268-1"
+
+[languages]
+    [languages.cs]
+        languageName = "Čeština"
+        contentDir = "content"
+        weight = 1
+        [languages.cs.params]
+            locale = "cs_CZ"

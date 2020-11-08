@@ -1,0 +1,42 @@
+.u-icon {
+    position: relative;
+    padding-left: 3rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 1.5em;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.u-icon--brain::before {
+    background-image: url('/icons/brain.svg');
+}
+
+.u-icon--diplom::before {
+    background-image: url('/icons/diplom.svg');
+}
+
+.u-icon--honor::before {
+    background-image: url('/icons/honor.svg');
+    width: 1.7em;
+    height: 1.7em;
+    top: -4px;
+}
+
+.u-icon--postal-package::before {
+    background-image: url('/icons/postal-package.svg');
+}
+
+.u-icon--shaking-hands::before {
+    background-image: url('/icons/shaking-hands.svg');
+}
+
+.u-icon--target::before {
+    background-image: url('/icons/target.svg');
+}

@@ -1,0 +1,316 @@
+{{ define "content" }}
+    <div class="c-container t-text--orange-dark">
+
+        <div id="msg-sent" class="">
+            vyborně
+        </div>
+
+        <form name="Poptávka" method="POST" id="interest" class="c-interest" data-netlify="true">
+
+            <div id="page-1" class="c-interest__page">
+                <div class="c-interest__title-box">
+                    <span>
+                        <h2 class="c-interest__title">S&nbsp;čím vám pomůžu?</h2>
+                        <span class="c-interest__title-alert">Vyberte jednu z možností.</span>
+                    </span>
+                    <a href="/" class="u-btn u-btn--white u-btn--small">&#10554; Zpět na úvod</a>
+                </div>
+                <div class="c-interest__radio-box">
+                    <input class="c-interest__radio" type="radio" id="potreba-a" data-selection="finance" value="Finanční programy" name="potreba">
+                    <label for="potreba-a" class="c-interest__label">
+                        <span class="c-interest__label-title">
+                            Finanční programy
+                            <svg class="c-interest__label-icon" width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 101.09" style="enable-background:new 0 0 122.88 101.09" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M52.75,37.63c0.8,1.33,1.23,2.76,1.23,4.23c0,1.1-0.24,2.16-0.69,3.19c-1.97-0.94-4.05-1.68-6.22-2.2 C49.63,41.36,51.58,39.58,52.75,37.63L52.75,37.63L52.75,37.63L52.75,37.63z M35.32,59.09l8.9,0.01l0.08,10.78l10.79,0.07 l-0.02,8.89l-10.72-0.08l0.08,10.73l-8.9-0.01l-0.08-10.78l-10.79-0.07l0.02-8.89l10.72,0.08L35.32,59.09L35.32,59.09L35.32,59.09 L35.32,59.09z M39.49,47.25c14.87,0,26.92,12.05,26.92,26.92c0,14.87-12.05,26.92-26.92,26.92c-14.87,0-26.92-12.05-26.92-26.92 C12.57,59.3,24.63,47.25,39.49,47.25L39.49,47.25L39.49,47.25L39.49,47.25z M14.13,54.3C5.72,51.9,0,47.23,0,41.86 c0-1.47,0.43-2.89,1.23-4.23c2.92,4.89,10.78,8.65,20.51,9.65C18.84,49.2,16.27,51.57,14.13,54.3L14.13,54.3L14.13,54.3L14.13,54.3 z M121.65,58.7c0.8,1.34,1.23,2.76,1.23,4.23c0,7.81-12.09,14.15-26.99,14.15c-14.9,0-26.99-6.34-26.99-14.15 c0-1.47,0.43-2.89,1.23-4.23c3.43,5.75,13.67,9.92,25.76,9.92C107.98,68.62,118.22,64.45,121.65,58.7L121.65,58.7L121.65,58.7 L121.65,58.7z M99.81,38.01l-0.05-3.5c0.79-0.03,1.44-0.27,1.94-0.72c0.51-0.45,0.78-0.99,0.84-1.63c0.06-0.73-0.18-1.37-0.72-1.93 c-0.55-0.56-1.42-0.89-2.61-0.99c-1.11-0.1-1.97,0.08-2.58,0.54c-0.6,0.45-0.94,1.08-1.01,1.88c-0.09,1,0.28,1.94,1.1,2.81 l-0.66,2.79l-9.31-2.61l0.8-9.22l3.26,0.28l-0.57,6.58l3.04,0.81c-0.32-0.81-0.45-1.62-0.38-2.44c0.13-1.54,0.81-2.81,2.03-3.78 c1.22-0.98,2.73-1.39,4.52-1.23c1.5,0.13,2.8,0.68,3.89,1.65c1.5,1.32,2.16,3.03,1.98,5.13c-0.15,1.68-0.71,3.01-1.71,3.99 C102.62,37.41,101.35,37.94,99.81,38.01L99.81,38.01L99.81,38.01L99.81,38.01z M95.89,23.96c12.25,0,22.18,3.9,22.18,8.7 c0,4.81-9.93,8.7-22.18,8.7c-12.25,0-22.18-3.9-22.18-8.7C73.71,27.85,83.64,23.96,95.89,23.96L95.89,23.96L95.89,23.96 L95.89,23.96L95.89,23.96z M95.89,21.07c14.9,0,26.99,6.34,26.99,14.15c0,7.81-12.09,14.15-26.99,14.15 c-14.9,0-26.99-6.34-26.99-14.15C68.9,27.41,80.99,21.07,95.89,21.07L95.89,21.07L95.89,21.07L95.89,21.07z M121.75,44.66 c0.74,1.29,1.13,2.65,1.13,4.06c0,7.81-12.09,14.15-26.99,14.15c-14.9,0-26.99-6.33-26.99-14.15c0-1.41,0.4-2.78,1.13-4.06 c3.33,5.83,13.65,10.08,25.86,10.08C108.1,54.74,118.42,50.49,121.75,44.66L121.75,44.66L121.75,44.66L121.75,44.66L121.75,44.66z M36.74,8.39l-0.31,3.51l-13.25-1.15c1.09,1.39,1.85,2.98,2.27,4.77l-3.19-0.28c-0.22-0.94-0.7-1.99-1.44-3.13 c-0.75-1.15-1.66-1.97-2.75-2.47l0.25-2.85L36.74,8.39L36.74,8.39L36.74,8.39L36.74,8.39L36.74,8.39z M26.99,2.88 c12.25,0,22.18,3.9,22.18,8.7c0,4.8-9.93,8.7-22.18,8.7c-12.25,0-22.18-3.9-22.18-8.7C4.81,6.78,14.74,2.88,26.99,2.88L26.99,2.88 L26.99,2.88L26.99,2.88z M26.99,0c14.9,0,26.99,6.33,26.99,14.15c0,7.81-12.09,14.15-26.99,14.15C12.09,28.3,0,21.96,0,14.15 C0,6.33,12.09,0,26.99,0L26.99,0L26.99,0L26.99,0z M52.85,23.58c0.74,1.29,1.13,2.65,1.13,4.06c0,7.81-12.09,14.15-26.99,14.15 C12.09,41.79,0,35.45,0,27.64c0-1.41,0.4-2.77,1.13-4.06c3.33,5.83,13.65,10.09,25.86,10.09C39.2,33.67,49.52,29.41,52.85,23.58 L52.85,23.58L52.85,23.58L52.85,23.58L52.85,23.58z M8.01,81.01C3.06,78.45,0,74.89,0,70.96c0-1.57,0.49-3.09,1.4-4.5 c1.26,1.97,3.32,3.74,5.98,5.21c-0.06,0.82-0.09,1.65-0.09,2.49C7.28,76.52,7.53,78.81,8.01,81.01L8.01,81.01L8.01,81.01 L8.01,81.01z M8.23,66.37C3.16,63.8,0,60.19,0,56.2c0-1.5,0.45-2.94,1.27-4.29c1.75,2.88,5.22,5.37,9.78,7.12 C9.82,61.33,8.87,63.79,8.23,66.37L8.23,66.37L8.23,66.37L8.23,66.37z"/></g></svg>
+                        </span>
+                        <p class="c-interest__label-description">
+                            Když chcete zhodnotit své peníze, aby zbytečně neztrácely svoji hodnotu na vašem účtu.
+                        </p>
+                    </label>
+
+                    <input class="c-interest__radio" type="radio" id="potreba-b" data-selection="pojisteni" value="Pojištění" name="potreba">
+                    <label for="potreba-b" class="c-interest__label">
+                        <span class="c-interest__label-title">
+                            Pojištění
+                            <svg class="c-interest__label-icon" width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 107.41"  xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M60.83,17.19C68.84,8.84,74.45,1.62,86.79,0.21c23.17-2.66,44.48,21.06,32.78,44.41 c-3.33,6.65-10.11,14.56-17.61,22.32c-8.23,8.52-17.34,16.87-23.72,23.2l-17.4,17.26L46.46,93.56C29.16,76.9,0.95,55.93,0.02,29.95 C-0.63,11.75,13.73,0.09,30.25,0.3C45.01,0.5,51.22,7.84,60.83,17.19L60.83,17.19L60.83,17.19z M39.31,51.36 c-1.11-1.07-1.69-2.49-1.72-3.93c-0.03-1.43,0.49-2.88,1.56-3.99c1.07-1.11,2.49-1.69,3.92-1.72c1.43-0.03,2.88,0.49,3.99,1.56 l8.52,8.16l20.26-18.82l0.69,0.52l-0.69-0.52c0.05-0.07,0.12-0.13,0.19-0.18c1.14-0.98,2.57-1.43,3.97-1.36v0l0.07,0.01 c1.41,0.09,2.78,0.72,3.8,1.85c1.03,1.15,1.5,2.61,1.42,4.04h0l-0.01,0.07c-0.09,1.38-0.7,2.73-1.79,3.74L59.39,63.25l0,0 c-0.04,0.05-0.09,0.1-0.14,0.14c-1.08,0.95-2.44,1.41-3.79,1.39c-1.36-0.02-2.72-0.54-3.78-1.56L39.31,51.36L39.31,51.36z"/></g></svg>
+                        </span>
+                        <p class="c-interest__label-description">
+                            Abyste ochránili své zdraví před něčekaným úrazem, nebo majetek před živly, krádeží či poškozením.
+                        </p>
+                    </label>
+
+                    <input class="c-interest__radio" type="radio" id="potreba-c" data-selection="uvery" value="Úvěry na bydlení" name="potreba">
+                    <label for="potreba-c" class="c-interest__label">
+                        <span class="c-interest__label-title">
+                            Úvěry na bydlení
+                            <svg class="c-interest__label-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1l-12 12h3v10h18v-10h3l-12-12zm0 18c-1.607-1.626-3-2.84-3-4.027 0-1.721 2.427-2.166 3-.473.574-1.695 3-1.246 3 .473 0 1.187-1.393 2.402-3 4.027zm8-11.907l-3-3v-2.093h3v5.093z"/></svg>
+                        </span>
+                        <p class="c-interest__label-description">
+                            Toužíte po vlastním bydlení, nebo potřebujete refinancovat nevýhodný úvěr?
+                        </p>
+                    </label>
+
+                    <input class="c-interest__radio" type="radio" id="potreba-d" data-selection="unknow" value="Nevím" name="potreba">
+                    <label for="potreba-d" class="c-interest__label">
+                        <span class="c-interest__label-title">
+                            Nevím
+                            <svg class="c-interest__label-icon" width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 108.7" style="enable-background:new 0 0 122.88 108.7" xml:space="preserve"><g><path class="st0" d="M25.4,95.27V56.59h17.4c7.38,1.32,14.75,5.32,22.13,9.96h13.51c6.12,0.37,9.33,6.57,3.37,10.64 c-4.74,3.48-10.99,3.28-17.4,2.7c-4.42-0.22-4.61,5.72,0,5.74c1.6,0.13,3.34-0.25,4.86-0.25c7.99-0.01,14.58-1.54,18.62-7.86 l2.02-4.72l20.11-9.96c10.06-3.31,17.21,7.21,9.8,14.53c-14.56,10.59-29.49,19.31-44.77,26.35c-11.1,6.75-22.19,6.52-33.28,0 L25.4,95.27L25.4,95.27L25.4,95.27z M64.35,0c-2.94,0-5.46,1.04-7.55,3.11c-2.1,2.07-3.11,4.59-3.11,7.55v23.42 c0,2.97,1.04,5.48,3.11,7.55c2.07,2.07,4.59,3.11,7.55,3.11h8.76c-1.37,5.25-2.8,9.04-6.96,12.75c7.85-2.04,14.65-6.19,19.53-12.74 h7.05c2.94,0,5.46-1.06,7.55-3.11c2.09-2.07,3.11-4.59,3.11-7.55V10.66c0-2.94-1.04-5.46-3.11-7.55C98.21,1.01,95.7,0,92.73,0 C83.27,0,73.81,0,64.35,0L64.35,0z M81.59,27.81h-7.25c0-1.25-0.02-2.54,0.42-3.73c0.28-0.78,0.7-1.47,1.25-2.11 c0.55-0.64,1.8-1.76,3.73-3.36c1.03-0.84,1.54-1.61,1.54-2.31c0-0.7-0.21-1.24-0.62-1.64c-0.42-0.38-1.04-0.58-1.88-0.58 c-0.91,0-1.65,0.3-2.24,0.9c-0.59,0.59-0.97,1.64-1.13,3.13L68,17.19c0.26-2.72,1.24-4.91,2.97-6.58c1.72-1.66,4.37-2.49,7.94-2.49 c2.78,0,5.01,0.58,6.72,1.73c2.31,1.57,3.47,3.66,3.47,6.26c0,1.08-0.3,2.13-0.9,3.13c-0.59,1-1.82,2.24-3.66,3.68 c-1.28,1.02-2.1,1.84-2.44,2.46C81.7,26.12,81.59,27,81.59,27.81L81.59,27.81z M81.86,30.44v4.78h-7.77v-4.78H81.86L81.86,30.44z M0,52.87h20.16v46.29H0V52.87L0,52.87z"/></g></svg>
+                        </span>
+                        <p class="c-interest__label-description">
+                            Vůbec nevadí když nevíte, zanechte mi tady na sebe kontakt a společně na to přijdeme.
+                        </p>
+                    </label>
+
+                </div>
+                <div class="c-standard__footer">
+                    <a href="#" data-next-page="2" class="u-btn u-btn--white-outline next-button u-btn--disabled" disabled>Další krok &#8594;</a>
+                </div>
+            </div>
+
+            <div id="page-2" class="c-interest__page">
+                <div class="c-interest__title-box">
+                    <span>
+                        <h2 class="c-interest__title">S&nbsp;čím vám pomůžu?</h2>
+                        <span class="c-interest__title-alert">Můžete vybrat více možností.</span>
+                    </span>
+                    <a href="#" data-back-page="1" class="back-button u-btn u-btn--white u-btn--small">&#10554; Zpět</a>
+                </div>
+
+                <div class="c-interest__checkbox-box t-d-none--important" data-selection="pojisteni">
+                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
+                    <label for="type-1" class="c-interest__label">
+                        <span class="c-interest__label-text">
+                            Pojisteni
+                        </span>
+                    </label>
+                </div>
+
+                <div class="c-interest__checkbox-box t-d-none--important" data-selection="uvery">
+                    <input class="c-interest__radio" type="checkbox" id="type-2" value="Finanční program" name="typ potreby">
+                    <label for="type-2" class="c-interest__label">
+                        <span class="c-interest__label-text">
+                            Uvery
+                        </span>
+                    </label>
+                </div>
+
+                <div class="c-interest__checkbox-box t-d-none--important" data-selection="finance">
+                    <input class="c-interest__radio" type="checkbox" id="type-3" value="Finanční program" name="typ potreby">
+                    <label for="type-3" class="c-interest__label">
+                        <span class="c-interest__label-text">
+                            Finance
+                        </span>
+                    </label>
+                </div>
+
+                <div class="c-standard__footer">
+                    <a href="#" data-back-page="1" class="back-button u-btn u-btn--white">&#10554; Zpět</a>
+                    <a href="#" data-next-page="3" class="u-btn u-btn--white-outline next-button u-btn--disabled" disabled>Další krok &#8594;</a>
+                </div>
+
+            </div>
+
+            <div id="page-3" class="c-interest__page">
+                <div class="c-interest__title-box">
+                    <span>
+                        <h2 class="c-interest__title">Nechte mi na vás kontakt.</h2>
+                        <span class="c-interest__title-alert">* Nutná pole pro pokračování.</span>
+                    </span>
+                    <a href="#" data-back-page="2" class="back-button u-btn u-btn--white u-btn--small">&#10554; Zpět</a>
+                </div>
+
+                <div class="c-interest__group">
+                    <input placeholder="Lubomír Novotný" type="text" id="fullname" name="fullname" class="c-interest__group-input" required>
+                    <label class="c-interest__input-label" for="fullname">Vaše jméno *</label>
+                </div>
+                <div class="c-interest__group">
+                    <input placeholder="novotny@example.cz" type="email" id="email" name="email" class="c-interest__group-input" required>
+                    <label class="c-interest__input-label" for="email">Kontaktní e-mail *</label>
+                </div>
+                <div class="c-interest__group">
+                    <input placeholder="+420 777 666 888" type="text" id="tel" name="tel" class="c-interest__group-input">
+                    <label class="c-interest__input-label" for="tel">Kontaktní telefon</label>
+                </div>
+
+                <div class="c-standard__footer t-mt-3rem">
+                    <a href="#" data-back-page="2" class="back-button u-btn u-btn--white">&#10554; Zpět</a>
+                    <a href="#" data-next-page="4" class="u-btn u-btn--white-outline next-button u-btn--disabled" disabled>Další krok &#8594;</a>
+                </div>
+            </div>
+
+            <div id="page-4" class="c-interest__page">
+                <div class="c-interest__title-box">
+                    <span>
+                        <h2 class="c-interest__title">Chcete mi nechat vzkaz?</h2>
+                    </span>
+                    <a href="#" data-back-page="3" class="back-button u-btn u-btn--white u-btn--small">&#10554; Zpět</a>
+                </div>
+
+                <div class="c-interest__group">
+                    <textarea placeholder="Dobrý den ..." class="c-interest__group-textarea" name="note" id="textarea-note" class="u-inquiry__textarea" rows="5"></textarea>
+                    <label class="c-interest__textarea-label" for="tel">Obsah zprávy</label>
+                </div>
+                
+                
+                <div class="c-standard__footer t-mt-3rem">
+                    <a href="#" data-back-page="3" class="back-button u-btn u-btn--white">&#10554; Zpět</a>
+                    <a href="#" data-next-page="4" class="u-btn u-btn--white-outline next-button" disabled>Odeslat &#8594;</a>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Le_sdkZAAAAAP8L7Q1ajkzJsM9oE0pqxis_rEzv" data-callback="onRecaptchaTest" data-size="invisible">
+                </div>
+            </div>
+        </form>
+    </div>
+{{ end }}
+{{ define "scripts" }}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        /**
+         * Recaptcha test function
+         * @description Serialize the form data and send them to the server
+         */
+         function onRecaptchaTest() {
+            var form = $('#inquiry');
+            $.post(form.attr('action'), form.serialize()).then(function() {
+                $('#inquiry').fadeOut(function () {
+                    $('#particles, #msg-sent').fadeIn();
+                });
+            });
+        }
+
+        // hide the inquiry form container
+        $('.u-inquiry__page, #msg-sent, .c-interest__page').fadeOut(0);
+        // display first step from form
+        $('.c-interest__page:first').fadeIn();
+
+        // start the listeners when the page is fully rendered
+        $(document).ready(function () {
+            // global variable for save value from #page-1
+            let firstPageValue;
+
+            // page 1 test
+            $('#page-1 input[type=radio]').change(function () {
+                // uncheck all inputs on next page
+                $('#page-2 .c-interest__checkbox-box .c-interest__radio').prop('checked', false);
+                // disable next btn on next page
+                $('#page-2 .next-button').addClass('u-btn--disabled').attr('disabled', true);
+                
+                if ($('#page-1 input[type=radio]:checked').length > 0) {
+                    firstPageValue = $('#page-1 input[type=radio]:checked').data('selection');
+
+                    // remove disable class for next button
+                    $('#page-1 .next-button').removeClass('u-btn--disabled').attr('disabled', false);
+                    // in #page-2 add all containers display none class
+                    $('#page-2 .c-interest__checkbox-box').addClass('t-d-none--important');
+                    // remove display none class from coming #page-2 box
+                    $('#page-2 .c-interest__checkbox-box[data-selection="'+ firstPageValue +'"]').removeClass('t-d-none--important');
+                }
+                else {
+                    $('#page-1 .next-button').addClass('u-btn--disabled').attr('disabled', true);
+                    $('#page-2 .c-interest__checkbox-box').addClass('t-d-none--important');
+                }
+            });
+
+            // page 2 test
+            $('#page-2 input[type=checkbox]').change(function () {
+                if ($('#page-2 input[type=checkbox]:checked').length > 0) {
+                    $('#page-2 .next-button').removeClass('u-btn--disabled').attr('disabled', false);
+                }
+                else {
+                    $('#page-2 .next-button').addClass('u-btn--disabled').attr('disabled', true);
+                }
+            });
+
+            // page 3 test
+            $('#page-3 input').keyup(function () {
+                // check that all the required inputs are filled
+                var ok = true;
+                $('#page-3 input[required]').each(function (i, elem) {
+                    if ($(this).val().trim().length === 0) {
+                        ok = false;
+                    }
+                });
+
+                // check the email input
+                var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                if (!re.test($('#page-3 input[type=email]').val().trim())) {
+                    ok = false;
+                }
+                
+                // disable or enable the "next page" button
+                if (ok) {
+                    $('#page-3 .next-button').removeClass('u-btn--disabled').attr('disabled', false);
+                }
+                else {
+                    $('#page-3 .next-button').addClass('u-btn--disabled').attr('disabled', true);
+                }
+            });
+
+            // focus on first input on next step form  
+            function focus(futurePage) {
+                $('#page-' + futurePage).find('input:first').focus();
+                $('#page-' + futurePage).find('textarea').focus();
+            }
+
+            // next page button
+            $('.next-button').click(function (e) {
+                e.preventDefault();
+
+                if ($(this).is('.u-btn--disabled')) {
+                    return;
+                }
+                
+                // get next page number and switch the pages
+                var nextPage = $(this).data('next-page');
+                $('#page-' + (nextPage-1)).fadeOut(function () {
+                    // check firstPageValue and go through twice when Value is 'unknow' && nextPage == 2
+                    if (nextPage === 2 && firstPageValue === 'unknow') {
+                        nextPage += 1;
+                    }
+                    // fadeIn new page
+                    $('#page-' + nextPage).fadeIn();
+                    // function for focus on input in new slide
+                    focus(nextPage);
+                });
+
+                // scroll to top
+                $('html, body').animate({ scrollTop: 0 }, 200);
+
+                return false;
+            });
+
+            // back button
+            $('.back-button').click(function (e) {
+                e.preventDefault();
+                
+                // get next page number and switch the pages
+                var backPage = $(this).data('back-page');
+                $('#page-' + (backPage+1)).fadeOut(function () {
+                    // check firstPageValue and go back twice when Value is 'unknow' && backPage == 2
+                    if (backPage === 2 && firstPageValue === 'unknow') {
+                        backPage -= 1;
+                    }
+                    // fadeIn new page
+                    $('#page-' + backPage).fadeIn();
+                    // function for focus on input in new slide
+                    focus(backPage);
+                });
+
+
+                // scroll to top
+                $('html, body').animate({ scrollTop: 0 }, 200);
+
+                return false;
+            });
+
+            // send button
+            $('.send-button').click(function () {
+                // serialize the form data
+                var data = $('form#inquiry').serialize();
+                
+                // do the recaptcha test
+                grecaptcha.execute();
+            });
+        });
+    </script>
+{{ end }}

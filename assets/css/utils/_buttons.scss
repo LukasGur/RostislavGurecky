@@ -1,0 +1,72 @@
+.u-btn {
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+
+    &--primary {
+        color: map-get($colors, white );
+        background: map-get($colors, orange );
+        box-shadow:  20px 20px 60px #c95e03, 
+             -20px -20px 60px #ff7f05;
+        border: #e46804 1px solid;
+
+        &:hover {
+            color: map-get($colors, orange-dark );
+        }
+    }
+
+    &--primary-outline {
+        color: map-get($colors, orange-dark );
+        background: map-get($colors, white );
+        box-shadow:  20px 20px 60px #c95e03, 
+             -20px -20px 60px #ff7f05;
+        border: #f0f0f0 1px solid;
+
+        &:hover {
+            color: map-get($colors, orange );
+        }
+    }
+
+    &--white {
+        background: map-get($colors, white );
+        box-shadow:  7px 7px 14px #d0d0d0, 
+             -7px -7px 14px #ffffff;
+        color: map-get($colors, orange-dark );
+        border: #f0f0f0 1px solid;
+
+        &:hover {
+            color: map-get($colors, orange );
+        }
+    }
+
+    &--white-outline {
+        background: map-get($colors, orange );
+        box-shadow:  7px 7px 14px #d0d0d0, 
+             -7px -7px 14px #ffffff;
+        color: map-get($colors, white );
+
+        &:hover {
+            color: map-get($colors, orange-dark );
+        }
+    }
+
+    &--small {
+        font-size: 1.2rem;
+        padding: 0.6rem 2rem;
+    }
+
+    &--disabled {
+        background-color: map-get($colors, white-dirty );
+        color: map-get($colors, gray-light );
+        cursor: not-allowed;
+
+        &:hover {
+            color: map-get($colors, gray-light );
+        }
+    }
+}

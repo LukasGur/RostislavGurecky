@@ -1,0 +1,124 @@
+.c-interest {
+
+    &__title {
+        font-size: 2.5rem;
+    }
+
+    &__title-alert {
+        font-size: 1rem;
+        font-weight: normal;
+        display: block;
+    }
+
+    &__title-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0;
+    }
+    
+    &__radio-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__checkbox-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    &__label {
+        cursor: pointer;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #ffffff, #dddddd);
+box-shadow:  20px 20px 20px #d0d0d0, 
+             -20px -20px 20px #ffffff;
+        padding: 2rem 3rem;
+        transition: 0.2s;
+    }
+
+    &__label-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    &__label-description {
+        font-size: 0.9rem;
+    }
+
+    &__label-text {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    &__label-icon {
+        fill: map-get($colors, orange-dark );
+        margin-left: 0.8rem;
+        transform: scale(1.2);
+    }
+
+    &__radio {
+        display: none;
+
+        &:checked + .c-interest__label {
+            background: #f5f5f5;
+            box-shadow: inset 20px 20px 20px #d0d0d0, 
+                        inset -20px -20px 20px #ffffff;
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: center;
+        width: 453px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    &__input-label, &__textarea-label {
+        position: absolute;
+        top: 10px;
+        left: 32px;
+        transition: 0.2s;
+        color: map-get($colors, purple);
+    }
+
+    &__group-input, &__group-textarea {
+        padding: 2.5rem 2rem 1.2rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #ffffff, #dddddd);
+box-shadow:  20px 20px 20px #d0d0d0, 
+             -20px -20px 20px #ffffff;
+        border: none;
+        transition: 0.2s;
+        width: 100%;
+
+        &:focus {
+            background: #f5f5f5;
+            box-shadow: inset 20px 20px 20px #d0d0d0, 
+                        inset -20px -20px 20px #ffffff;
+        }
+
+    }
+
+    &__textarea-label {
+        top: 27px;
+        left: 30px
+    }
+
+    &__group-textarea {
+        padding-top: 3.4rem;
+        padding-left: 1.9rem;
+        min-height: 150px;
+    }
+    
+}

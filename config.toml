@@ -1,6 +1,6 @@
 # basic site settings
 title = "Rostislav Gurecky"
-baseURL = "https://rostislavgurecky.cz/"
+baseURL = "https://testingrostislavgureckysite.netlify.app"
 
 # language settings
 languageCode = "cs-cz"

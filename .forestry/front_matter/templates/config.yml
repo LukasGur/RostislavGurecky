@@ -48,8 +48,10 @@ fields:
       name: brand
       label: brand
       fields:
-      - type: file
-        name: logo
+      - name: logo
+        type: file
+        config:
+          maxSize: 64
         label: Noltio logo
         default: "/images/noltio-logo.png"
       - type: text

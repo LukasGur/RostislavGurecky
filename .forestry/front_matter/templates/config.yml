@@ -50,7 +50,8 @@ fields:
       fields:
       - type: file
         name: logo
-        label: logo
+        label: Noltio logo
+        default: "/images/noltio-logo.png"
       - type: text
         name: logoAlt
         label: logoAlt

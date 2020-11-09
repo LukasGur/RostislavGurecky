@@ -12,11 +12,6 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/reference
-  label: Reference
-  create: all
-  match: "**/*"
-- type: directory
   path: content/clanky
   label: Clanky
   create: all

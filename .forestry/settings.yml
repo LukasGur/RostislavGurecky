@@ -6,6 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: content
+  label: Formulář
+  create: all
+  match: mam-zajem
+- type: directory
+  path: content
   label: Úvodní stránka
   create: all
   match: _index.md

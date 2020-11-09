@@ -20,7 +20,7 @@ sections:
   path: content
   label: Formulář
   create: all
-  match: mam-zajem
+  match: mam-zajem.md
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

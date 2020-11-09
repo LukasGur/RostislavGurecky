@@ -7,3 +7,5 @@ fields:
   label: Nadpis článku
   config:
     required: true
+pages:
+- content/clanky/lzi.md

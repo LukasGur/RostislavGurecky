@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content
+  label: NEco
+  create: all
+  match: _index.md
+- type: directory
   path: ''
   label: Úvodní stránka
   create: all

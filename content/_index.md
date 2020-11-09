@@ -84,9 +84,6 @@ whyMe:
 businessCard:
   heading: Má vizitka
   buttons:
-  - type: white-outline
-    text: Hello
-    url: https://seznam.cz
   - type: white
     text: Přejděte na formulář &#62;
     url: "/mam-zajem"

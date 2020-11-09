@@ -21,12 +21,9 @@
                 </svg>
             </a>
             <nav class="o-nav">
-                <a href="/" class="o-nav__item">Úvod</a>
-                <a href="/#dovednosti" class="o-nav__item">Co umím</a>
-                <a href="/#proc-ja" class="o-nav__item">Proč já</a>
-                <a href="/clanky" class="o-nav__item">Články</a>
-                <a href="/#vizitka" class="o-nav__item">Kontakt</a>
-                <a href="/mam-zajem" class="o-nav__item u-btn u-btn--white">Chci pomoc</a>
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="o-nav__item {{ if .Identifier }} u-btn u-btn--white {{ end }}">{{ .Name }}</a>
+                {{ end }}
             </nav>
         </div>
     </div>

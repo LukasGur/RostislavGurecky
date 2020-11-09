@@ -21,6 +21,10 @@
     }
 }
 
+.t-d-block {
+    display: block;
+}
+
 .t-bg {
     @each $name, $color in $colors {
         &--#{$name} {

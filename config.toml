@@ -20,6 +20,40 @@ filename = "sitemap.xml"
 [params]
     domain = "https://rostislavgurecky.cz"
     googleAnalyticsId = "UA-155090268-1"
+[params.footer]
+    [params.footer.brand]
+        logo = "/images/noltio-logo.png"
+        logoAlt = "Noltio, s.r.o. logo"
+        link = "https://noltio.com/"
+        targetBlank = true
+
+[menu]
+    [[menu.main]]
+        name = "Úvod"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Co umím"
+        url = "/#dovednosti"
+        weight = 2
+    [[menu.main]]
+        name = "Proč já"
+        url = "/#proc-ja"
+        weight = 3
+    [[menu.main]]
+        name = "Články"
+        url = "/clanky"
+        weight = 4
+    [[menu.main]]
+        name = "Kontakt"
+        url = "/#vizitka"
+        weight = 5
+    [[menu.main]]
+        name = "Chci pomoc"
+        url = "/mam-zajem"
+        weight = 6
+        identifier = "btn"
+    
 
 [languages]
     [languages.cs]

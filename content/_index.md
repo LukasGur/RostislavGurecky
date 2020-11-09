@@ -87,7 +87,8 @@ businessCard:
   - type: white
     text: Přejděte na formulář &#62;
     url: "/mam-zajem"
-  poem: |-
+  poem: |2
+
     Dobrý den, <strong class="t-text--gray">Rostislav Gurecký</strong> jméno mé,
     těším se, až vaše finance pořádně zhodnotíme.
     Přísahám, že budu jednat vždy na rovinu,

@@ -1,4 +1,4 @@
 ---
-title: Články - finanční poradce | Rostislav Gurecký
+title: Články - finanční poradce
 
 ---

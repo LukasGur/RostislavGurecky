@@ -1,10 +1,9 @@
 ---
-title:
+title: Finanční poradce
 seo:
   description: Den co den naše webové aplikace na míru ✓ zefektivňují byznys našich
     klientů ✓ šetří čas našim klientům. Specializujeme se na interní systémy a API.
   robots: index,follow
-  title: Finanční poradce | Rostislav Gurecký.
 introduction:
   heading: Finanční poradenství pro snadnější život.
   subheading: Srozumitelně.
@@ -88,8 +87,11 @@ businessCard:
     raw: "+420777581730"
     formatted: +420 777 581 730
   email: rostislav.gurecky@zfpa.cz
-  address: |-
-    Traubova 10
-    602 00 Brno-sever
+  address:
+    text: |-
+      Traubova 10
+      602 00 Brno-sever
+    link: "https://en.mapy.cz/zakladni?x=16.6151281&y=49.2023964&z=17&source=addr&id=8907726"
+
 
 ---

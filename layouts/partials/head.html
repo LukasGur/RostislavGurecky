@@ -15,7 +15,7 @@
     {{ hugo.Generator }}
 
     <!-- SEO: basic -->
-    <title>{{ .Params.seo.title }}</title>
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="description" content="{{ .Params.seo.description }}">
     <link rel="canonical" href="{{ .Site.Params.domain}}{{ .Permalink }}">
 

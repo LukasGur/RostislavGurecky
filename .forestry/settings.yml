@@ -23,7 +23,7 @@ sections:
   match: mam-zajem.md
 - type: directory
   path: ''
-  label: Config!!!
+  label: Config
   create: all
   match: config.toml
 upload_dir: static/images

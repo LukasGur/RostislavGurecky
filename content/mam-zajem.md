@@ -1,5 +1,6 @@
 ---
-title: Zájmový formulář
+title: Formulář
 seo: 
 type: mam-zajem
+
 ---

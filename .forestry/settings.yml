@@ -5,10 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content
-  label: Formulář
+  path: content/clanky
+  label: Blog
   create: all
-  match: mam-zajem
+  match: "**/*"
+  templates:
+  - clanek
 - type: directory
   path: content
   label: Úvodní stránka
@@ -16,16 +18,9 @@ sections:
   match: _index.md
 - type: directory
   path: content
-  label: Pages
+  label: Formulář
   create: all
-  match: "*"
-- type: directory
-  path: content/clanky
-  label: Články
-  create: all
-  match: "**/*"
-  templates:
-  - clanek
+  match: mam-zajem
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

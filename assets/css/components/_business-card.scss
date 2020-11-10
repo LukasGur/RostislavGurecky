@@ -1,0 +1,79 @@
+.c-business-card {
+    display: flex;
+    justify-content: space-between;
+    border-top: 8px solid map-get($colors, orange );
+    padding: 2.5rem 2.5rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: map-get($colors, white );
+    box-shadow:  7px 7px 14px #d0d0d0, 
+    -7px -7px 14px #ffffff;
+    
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        > * {
+            margin: 1rem;
+        }
+
+        .u-ZFP-logo {
+            width: 3.3rem;
+        }
+
+        .u-logo {
+            width: 2.5rem;
+        }
+    }
+
+    &__profile-photo {
+        max-height: 300px;
+        max-width: 250px;
+        border-radius: 50px;
+        margin-top: 1rem;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        color: map-get($colors, gray-light );
+        font-style: italic;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    &__info-item {
+        display: flex;
+        margin-top: 0.2rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: map-get($colors, orange-dark );
+        fill: map-get($colors, orange-dark );
+        transition: 0.2s;
+
+        &:hover {
+            color: #bd5500;
+            fill: #bb5400;
+        }
+        
+        > svg {
+            position: relative;
+            top: 3px;
+            margin-right: 0.8rem;
+        }
+    }
+
+    &__buttons {
+        margin-top: 3.5rem;
+    }
+}

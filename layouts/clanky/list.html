@@ -1,10 +1,24 @@
 {{ define "content" }}
-    <section class="c-standard">
-        
+    <section>
+        <div class="c-container c-blog-list">
+            <div class="c-blog-list__title-box">
+                <h1 class="c-blog-list__title">{{ .Params.heading }}</h1>
+                <p class="c-blog-list__subtitle">{{ .Params.subheading }}</p>
+            </div>
+            <a href="{{ .Params.button.url }}" class="u-btn u-btn--{{ .Params.button.type }}">{{ .Params.button.text }}</a>
+        </div>
     </section>
-    <section class="c-container c-standard">
-        <h2 class="c-standard__title t-text--orange">List články</h2>
-        <h3 class="c-standard__subtitle t-text--orange-dark">/clanky/list</h3>
-        {{ .Title }}
+
+    <section id="list" class="t-text--orange-dark">
+        <div class="c-container">
+            {{ $pages := where .Site.RegularPages "Type" "clanky" }}
+            {{ range $pages }}
+                <a href="{{ .RelPermalink }}">
+                    <p>{{ .Title }}</p>
+                </a>
+            {{ end }}
+        </div>
     </section>
+
+    
 {{ end }}

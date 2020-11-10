@@ -1,5 +1,5 @@
 # basic site settings
-title = "Rostislav Gurecky"
+title = "Finanční poradce | Rostislav Gurecký"
 baseURL = "https://testingrostislavgureckysite.netlify.app"
 
 # language settings
@@ -19,13 +19,27 @@ filename = "sitemap.xml"
 
 [params]
     domain = "https://rostislavgurecky.cz"
-    googleAnalyticsId = "UA-155090268-1"
-[params.footer]
-    [params.footer.brand]
-        logo = "/images/noltio-logo.png"
-        logoAlt = "Noltio, s.r.o. logo"
-        link = "https://noltio.com/"
-        targetBlank = true
+    googleAnalyticsId = ""
+
+    [params.footer]
+        [params.footer.brand]
+            logo = "/images/noltio-logo.png"
+            logoAlt = "Noltio, s.r.o. logo"
+            link = "https://noltio.com/"
+            targetBlank = true
+    [params.contact]
+        [params.contact.telephone]
+            raw = "+420777581730"
+            formatted = "+420 777 581 730"
+        [params.contact.address]
+            street = "Traubova 10"
+            ZIP = "602 00"
+            city = "Brno-sever"
+            link = "https://en.mapy.cz/zakladni?x=16.6151281&y=49.2023964&z=17&source=addr&id=8907726"
+        [params.contact.email]
+            corporate = "rostislav.gurecky@zfpa.cz"
+            personal = "r.gurecky@seznam.cz"
+
 
 [menu]
     [[menu.main]]

@@ -1,0 +1,38 @@
+#intro {
+    overflow: hidden;
+}
+
+.c-intro {
+    padding-top: 6.5rem;
+    position: relative;
+    margin-bottom: 26rem;
+    z-index: 0;
+
+    &::after {
+        content: url('/running_wild.svg');
+        position: absolute;
+        top: 0.5rem;
+        right: -10rem;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    &__title-box {
+        margin-bottom: 6.3rem;
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    &__title {
+        font-size: 4rem;
+        line-height: 1.2em;
+        color: map-get($colors, orange-dark );
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+        margin-top: 1.3rem;
+        color: map-get($colors, orange );
+        font-weight: 600;
+    }
+}

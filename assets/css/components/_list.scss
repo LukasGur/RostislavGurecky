@@ -1,0 +1,24 @@
+.c-list {
+    list-style-type: none;
+
+    &__item {
+        margin-top: 8px;
+        position: relative;
+        font-size: 1.2rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    &__title-icon {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        transform: scale(3);
+        fill: map-get($colors, white );
+    }
+}

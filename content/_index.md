@@ -1,8 +1,7 @@
 ---
 title: Hlavní stránka
 seo:
-  description: Den co den naše webové aplikace na míru ✓ zefektivňují byznys našich
-    klientů ✓ šetří čas našim klientům. Specializujeme se na interní systémy a API.
+  description: Finanční poradenství pro každého.
   robots: index,follow
 introduction:
   heading: Finanční poradenství pro snadnější život.

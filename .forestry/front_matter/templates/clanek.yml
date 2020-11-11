@@ -4,8 +4,58 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: Nadpis článku
+  label: Hlavní nadpis článku
   config:
     required: true
+- name: create_date
+  type: datetime
+  label: Datum vytvoření
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+- name: public_date
+  type: datetime
+  label: Datum zveřejnění
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: category
+  type: text
+  config:
+    required: true
+  label: Kategorie
+- name: author
+  type: field_group
+  config: {}
+  fields:
+  - name: author_is_rostislav_gurecky
+    type: boolean
+    label: Autorem je Rostislav Gurecky
+    default: true
+  - name: author_name
+    type: text
+    config:
+      required: true
+    label: Autorovo Jméno
+    showOnly:
+      field: author_is_rostislav_gurecky
+  - name: author_photo
+    type: file
+    config:
+      maxSize: 64
+    label: Autorova fotka
+    showOnly:
+      field: author_is_rostislav_gurecky
+      value: false
+  label: Autor
 pages:
 - content/clanky/lzi.md

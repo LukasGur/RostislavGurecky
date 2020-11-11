@@ -58,4 +58,5 @@ fields:
       value: false
   label: Autor
 pages:
+- content/clanky/dnes-to-bude-dalsi-zkusebni-clanek-takze-se-moc-neteste.md
 - content/clanky/lzi.md

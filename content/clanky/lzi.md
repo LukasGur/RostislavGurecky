@@ -7,7 +7,6 @@ author:
   author_is_rostislav_gurecky: true
   author_name: ''
   author_photo: ''
-draft: true
 
 ---
 ## Dobrý den

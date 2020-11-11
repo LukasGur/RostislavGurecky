@@ -7,7 +7,6 @@ author:
   author_photo: "/images/psfix_20201008_220049.jpeg"
 title: Dnes to bude další zkušební článek, takže se moc netěšte.
 category: Zkušební článek
-draft: true
 
 ---
 Dobrý den, dneska už je 22:10 a venku je strašná kosa, tma a nedej bože jestli tam prší.

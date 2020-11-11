@@ -1,5 +1,9 @@
 ---
 title: Vyplatí se vám spíš předdůchod nebo předčasný důchod? A co při ztrátě zaměstnání?
+author:
+  author_is_rostislav_gurecky: true
+category: Finance
+public_date: 2020-11-09T00:00:00+01:00
 draft: true
 
 ---

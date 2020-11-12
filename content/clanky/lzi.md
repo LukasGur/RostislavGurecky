@@ -1,7 +1,7 @@
 ---
 title: Lži
 create_date: 
-public_date: 2020-11-01T00:00:00+01:00
+public_date: 2020-11-02T00:00:00+01:00
 category: Zkušební článek
 author:
   author_is_rostislav_gurecky: true

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ .Lang }}" prefix="og: http://ogp.me/ns#">
+<html lang="{{ .Lang }}">
 {{ partial "head" . }}
 <body>
-    {{ partial "header" . }}
+    {{ partialCached "header" . }}
 
     <main class="o-main">
         {{ block "content" . }}{{ end }}
     </main>
-    {{ partial "footer" . }}
+    {{ partialCached "footer" . }}
     {{ block "scripts" . }}{{ end }}
 </body>
 </html>

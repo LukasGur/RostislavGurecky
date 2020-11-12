@@ -8,9 +8,9 @@
                     <path class="u-logo__G" d="M199.76,149.72q0,23.31-24.6,37.23-22.49,12.78-54.81,12.78-42.16,0-61.49-29.26Q44.12,148,44.11,110.52a139,139,0,0,1,18.27-69.9Q85.92,0,126.68,0q3.15,0,10.54,2.27,20.37,6.54,35.13,29.55,14.06,21.6,14.06,40.92,0,34.67-17.22,34.66-9.84,0-9.84-6.54,0-1.12,4.75-8.23t4.74-11.37a90.17,90.17,0,0,0-9.52-39.78Q147,15.9,125.47,15.9q-21.85,0-38.07,21.31A93.57,93.57,0,0,0,70.29,75.14q-4.4,21.17-4.4,36.8,0,29.84,6.33,44,9.48,22.16,37.94,29a64,64,0,0,0,14.76,2.27,73.28,73.28,0,0,0,30.57-6.53q14.4-6.54,21.78-17.62,7-10.23,7-14.21,0-6.24-12-6.25-24.24,0-38.65,5.54T120,153.7q-11.59,0-11.59-15.06,0-3.4,4.56-5.68t25.65-5.11Q158.64,125,166,125q14,0,23.89,6.82T199.76,149.72Z" transform="translate(-1 0.01)" />
                 </svg>
                 <span class="o-footer__badge-copyright">&copy; {{ dateFormat "2006" now }} Rostislav Gurecký</span>
-                <a class="o-footer__noltio-link" {{ if .Site.Params.footer.brand.targetBlank }} target="_blank" {{end}} href="{{ .Site.Params.footer.brand.link }}">
+                <a class="o-footer__noltio-link" href="https://noltio.com/">
                     Vyvinulo 
-                    <img class="o-footer__noltio-logo" src="{{ .Site.Params.footer.brand.logo }}" alt="{{ .Site.Params.footer.brand.logoAlt }}">
+                    <img class="o-footer__noltio-logo" src="/images/noltio-logo.png" alt="Noltio, s.r.o. logo">
                 </a>
             </div>
         </div>
@@ -59,3 +59,16 @@
 </footer>
 
 <script src="/js/jQuery-3.5.1.js"></script>
+<script>
+    $(document).ready(function() {
+        // add header scrolled class when page scrolled
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 20) {
+                $('.o-header').addClass('o-header--scrolled');
+            }
+            else {
+                $('.o-header').removeClass('o-header--scrolled');
+            }
+        });
+    })
+</script>

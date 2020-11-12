@@ -1,6 +1,8 @@
 # basic site settings
-title = "Finanční poradce | Rostislav Gurecký"
+title = "Finanční poradce Brno | Rostislav Gurecký"
+description = "neco"
 baseURL = "https://testingrostislavgureckysite.netlify.app"
+summaryLength = 20
 
 # language settings
 languageCode = "cs-cz"
@@ -19,14 +21,9 @@ filename = "sitemap.xml"
 
 [params]
     domain = "https://rostislavgurecky.cz"
+    siteDescription = "Finanční poradce pro Brno s více jak dvacetiletou zkušeností. Hypotéky | Pojištění | Investice | Energie "
     googleAnalyticsId = ""
 
-    [params.footer]
-        [params.footer.brand]
-            logo = "/images/noltio-logo.png"
-            logoAlt = "Noltio, s.r.o. logo"
-            link = "https://noltio.com/"
-            targetBlank = true
     [params.contact]
         [params.contact.telephone]
             raw = "+420777581730"

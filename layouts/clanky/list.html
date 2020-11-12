@@ -1,6 +1,6 @@
 {{ define "content" }}
     <section>
-        <div class="c-container c-blog-list">
+        <div class="c-container c-blog-list__intro">
             <div class="c-blog-list__title-box">
                 <h1 class="c-blog-list__title">{{ .Params.heading }}</h1>
                 <p class="c-blog-list__subtitle">{{ .Params.subheading }}</p>
@@ -10,15 +10,31 @@
     </section>
 
     <section id="list" class="t-text--orange-dark">
-        <div class="c-container">
-            {{ $pages := where .Site.RegularPages "Type" "clanky" }}
-            {{ range $pages }}
-                <a href="{{ .RelPermalink }}">
-                    <p>{{ .Title }}</p>
-                </a>
-            {{ end }}
+        <div class="c-container c-standard">
+            <div class="c-sticky-container">
+                <div class="c-sticky-container__left">
+                    <h2 class="c-sticky-container__title">Seznam článků</h2>
+                </div>
+
+                <div class="c-sticky-container__right">
+                    <div class="c-blog-list__list">
+                        {{ $pages := where .Site.RegularPages "Type" "clanky" }}
+                        {{ range $pages }}
+                            <a href="{{ .RelPermalink }}" class="c-blog-list__item">
+                                
+                                <h3 class="c-blog-list__item-title">{{ .Title }}</h3>
+                                <p class="c-blog-list__item-summary">{{ .Summary }}</p>
+                                <span class="c-blog-list__item-badge">{{ .Params.category }}</span>
+                                <span class="c-blog-list__item-date">f{{ .Params.public_date }}</span>
+                            </a>
+                        {{ end }}
+                    </div>
+                    <div class="c-blog-list__buttons">
+                        <a href="#" class="u-btn u-btn--white">some button</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
     
 {{ end }}

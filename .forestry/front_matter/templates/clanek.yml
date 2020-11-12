@@ -38,18 +38,18 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: author_is_rostislav_gurecky
+  - name: rostislav_gurecky
     type: boolean
-    label: Autorem je Rostislav Gurecky
+    label: Autorem je Rostislav Gurecký
     default: true
-  - name: author_name
+  - name: name
     type: text
     config:
       required: false
     label: Autorovo Jméno
     showOnly:
       field: author_is_rostislav_gurecky
-  - name: author_email
+  - name: email
     type: text
     config:
       required: false
@@ -57,7 +57,7 @@ fields:
     showOnly:
       field: author_is_rostislav_gurecky
       value: false
-  - name: author_photo
+  - name: photo
     type: file
     config:
       maxSize: 64

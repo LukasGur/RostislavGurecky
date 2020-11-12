@@ -46,7 +46,7 @@ fields:
     type: text
     config:
       required: false
-    label: Autorovo Jméno
+    label: Autorovo celé jméno
     showOnly:
       field: author_is_rostislav_gurecky
   - name: email

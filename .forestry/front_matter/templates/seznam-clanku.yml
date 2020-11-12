@@ -1,4 +1,45 @@
 ---
 label: Seznam článků
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  description: Titulek který se bude zobrazovat v záložce prohlížeče, nikoliv na stránce.
+  label: Titulek stránky
+- name: heading
+  type: text
+  config:
+    required: true
+  label: Nadpis
+  description: Hlavní nadpis na stránce
+- name: subheading
+  type: text
+  config:
+    required: true
+  label: Podnadpis
+  description: Hlavní podnadpis na stránce.
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: true
+    label: Text
+    description: Text který se bude zobrazovat v tlačítku
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Typ
+  - name: url
+    type: text
+    config:
+      required: true
+    label: Url
+    description: Kam tlačítko bude směřovat.
+  label: Tlačítko v intru
+  description: Tlačítko pod hlavními nadpisy

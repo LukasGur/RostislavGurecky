@@ -1,9 +1,10 @@
 ---
 title: Používání okamžitých plateb má svoje limity
-public_date: 2020-11-05T00:00:00+01:00
+public_date: '2020-11-05T00:00:00+01:00'
 category: Technologie
 author:
   author_is_rostislav_gurecky: true
+publishing__date: 2020-11-08T00:00:00+01:00
 
 ---
 Možná už je používáte. Možná jste o nich zaslechli, ale zatím jste takhle platit nezkoušeli. O čem je řeč? O okamžitých platbách. Bankovních převodech, které zajistí převedení peněz na protiúčet prakticky ihned. Dokonce i v noci nebo o víkendu.

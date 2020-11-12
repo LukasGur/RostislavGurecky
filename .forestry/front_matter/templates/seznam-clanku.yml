@@ -8,7 +8,7 @@ fields:
     required: true
   description: Titulek který se bude zobrazovat v záložce prohlížeče, nikoliv na stránce.
   label: Titulek stránky
-- name: intro
+- name: introduction
   type: field_group
   config: {}
   fields:

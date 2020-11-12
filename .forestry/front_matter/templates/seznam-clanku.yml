@@ -8,38 +8,70 @@ fields:
     required: true
   description: Titulek který se bude zobrazovat v záložce prohlížeče, nikoliv na stránce.
   label: Titulek stránky
-- name: heading
-  type: text
-  config:
-    required: true
-  label: Nadpis
-  description: Hlavní nadpis na stránce
-- name: subheading
-  type: text
-  config:
-    required: true
-  label: Podnadpis
-  description: Hlavní podnadpis na stránce.
-- name: button
+- name: intro
   type: field_group
   config: {}
+  fields:
+  - name: subheading
+    type: text
+    config:
+      required: true
+    label: Podnadpis
+    description: Hlavní podnadpis na stránce.
+  - name: heading
+    type: text
+    config:
+      required: true
+    label: Nadpis
+    description: Hlavní napis na stránce.
+  - name: button
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: true
+      label: Text
+      description: Text v tlačítku
+    - name: url
+      type: text
+      config:
+        required: true
+      label: URL
+      description: Kam tlačítko bude směřovat
+    - name: type
+      type: text
+      config:
+        required: true
+      label: Typ
+      description: Vzhled tlačítka
+    label: Tlačítko
+  label: Intro
+  description: '&nbsp;Část stránky kterou člověk uvidí, když přijde na stránku "Články".'
+- name: buttons
+  type: field_group_list
   fields:
   - name: text
     type: text
     config:
       required: true
     label: Text
-    description: Text který se bude zobrazovat v tlačítku
-  - name: type
-    type: text
-    config:
-      required: false
-    label: Typ
+    description: Text v tlačítku
   - name: url
     type: text
     config:
       required: true
-    label: Url
-    description: Kam tlačítko bude směřovat.
-  label: Tlačítko v intru
-  description: Tlačítko pod hlavními nadpisy
+    label: URL
+    description: Kam tlačítko bude směřovat
+  - name: type
+    type: text
+    config:
+      required: true
+    label: Typ
+    description: 'Jak tlačítko bude vypadat '
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tlačítka na konci seznamu s články

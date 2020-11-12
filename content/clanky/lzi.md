@@ -4,7 +4,7 @@ create_date: 2020-11-02T00:00:00.000+01:00
 publish_date: 2020-11-01T00:00:00.000+01:00
 category: Zkušební článek
 author:
-  rostislav_gurecky: true
+  rostislav_gurecky: false
   name: ''
   photo: "/images/unknown-person.png"
   email: ''

@@ -42,21 +42,6 @@ fields:
     type: boolean
     label: Autorem je Rostislav Gurecký
     default: true
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Autorovo celé jméno
-    showOnly:
-      field: author_is_rostislav_gurecky
-  - name: email
-    type: text
-    config:
-      required: false
-    label: Autorův email
-    showOnly:
-      field: author_is_rostislav_gurecky
-      value: false
   - name: photo
     type: file
     config:

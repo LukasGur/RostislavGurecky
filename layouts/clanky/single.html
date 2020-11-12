@@ -1,11 +1,25 @@
 {{ define "content" }}
-    <section class="c-container c-standard">
-        <h2 class="c-standard__title t-text--orange-dark">{{ .Title }}</h2>
-    </section>
-
     <section>
-        <div class="c-container c-blog-post__content">
-            {{ .Content }}
+        <div class="c-container c-standard">
+            <div class="c-blog-post__head">
+                <span class="c-blog-list__item-badge">{{ .Params.category }}</span>
+                <a href="/clanky" class="u-btn u-btn--small u-btn--white" style="float: right">&#10554; Zpět</a>
+            </div>
+            <h2 class="c-standard__title t-text--orange">{{ .Title }}</h2>
+            <div class="c-blog-post__content">
+                {{ .Content }}
+            </div>
+            <div class="c-blog-post__footer">
+                {{ dateFormat "02. 01. 2006" .Params.publish_date }}
+                {{ if .Params.author.rostislav_gurecky }}
+                    Rostislav Gurecký
+                    <img src="/" alt="">
+                {{ else }}
+                    {{ .Params.author.name }}
+                    {{ .Params.author.email }}
+                    {{ .Params.author.photo }}
+                {{ end }}
+            </div>
         </div>
     </section>
 

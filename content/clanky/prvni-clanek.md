@@ -2,9 +2,9 @@
 title: Používání okamžitých plateb má svoje limity
 category: Technologie
 author:
-  author_is_rostislav_gurecky: true
-  author_photo: "/images/unknown-person.png"
-  author_name: ''
+  rostislav_gurecky: true
+  photo: "/images/unknown-person.png"
+  name: ''
 create_date: 2020-11-12T10:42:03+01:00
 publish_date: 2020-11-07T10:42:03+01:00
 

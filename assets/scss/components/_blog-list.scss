@@ -89,6 +89,9 @@
 
     &__item-footer {
         margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__item-badge {
@@ -99,7 +102,6 @@
     }
 
     &__item-date {
-        float: right;
         font-size: 0.9rem;
     }
 

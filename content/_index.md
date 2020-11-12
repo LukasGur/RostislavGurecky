@@ -1,8 +1,5 @@
 ---
 title: Hlavní stránka
-seo:
-  description: Finanční poradenství pro každého.
-  robots: index,follow
 introduction:
   heading: Finanční poradenství pro snadnější život.
   subheading: Srozumitelně.
@@ -10,7 +7,7 @@ introduction:
     text: Co dokážu zařídit
     type: white
     url: "/#dovednosti"
-experiences:
+skills:
   heading: Co dokážu zařídit.
   subheading: Vyberte si jednu z možností.
   buttons:

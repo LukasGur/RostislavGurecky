@@ -1,6 +1,5 @@
 # basic site settings
 title = "Finanční poradce Brno | Rostislav Gurecký"
-description = "neco"
 baseURL = "https://testingrostislavgureckysite.netlify.app"
 summaryLength = 20
 

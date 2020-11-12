@@ -1,7 +1,16 @@
 .c-blog-post {
 
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
     &__content {
         padding-bottom: 5rem;
+        margin-top: 3rem;
+        color: map-get($colors, orange-dark );
         h2 {
             font-weight: 800;
             font-size: 1.7rem;

@@ -49,6 +49,14 @@ fields:
     label: Autorovo Jméno
     showOnly:
       field: author_is_rostislav_gurecky
+  - name: author_email
+    type: text
+    config:
+      required: false
+    label: Autorův email
+    showOnly:
+      field: author_is_rostislav_gurecky
+      value: false
   - name: author_photo
     type: file
     config:

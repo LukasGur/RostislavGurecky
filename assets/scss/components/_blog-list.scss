@@ -99,6 +99,8 @@
         color: map-get($colors, white );
         padding: 0.5rem 1.5rem;
         border-radius: 10px;
+        box-shadow:  7px 7px 14px #d0d0d0, 
+             -7px -7px 14px #ffffff;
     }
 
     &__item-date {

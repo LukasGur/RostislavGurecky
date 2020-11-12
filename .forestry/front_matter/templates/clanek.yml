@@ -1,7 +1,7 @@
 ---
 label: Článek
 hide_body: false
-display_field: category
+display_field: title
 fields:
 - type: text
   name: title

@@ -88,4 +88,6 @@ businessCard:
     těším se, až vaše finance pořádně zhodnotíme.
     Přísahám, že budu jednat vždy na rovinu,
     bez ohledu na to, kolik za vaši důvěru dostanu.
+  profilovy_obrazek: "/images/rostislav_gurecky.JPG"
+
 ---

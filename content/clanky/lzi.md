@@ -5,10 +5,10 @@ publish_date: 2020-11-01T00:00:00.000+01:00
 category: Zkušební článek
 author:
   rostislav_gurecky: false
-  name: ''
+  name: Lukáš Gurecký
   photo: "/images/unknown-person.png"
-  email: ''
-  url: ''
+  email: l.gurecky@seznam.cz
+  url: noltio.com
 
 ---
 ## Dobrý den

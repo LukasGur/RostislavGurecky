@@ -38,12 +38,12 @@
                 <h4>Články</h4>
             </a>
             <ul class="o-footer__list">
-                <li class="o-footer__list-item">
-                    <a class="o-footer__list-link" href="#">Zdraví, rodina a domov. Jaké jsou vaše priority a jste dostatečně finančně připraveni, když přijdou nepřevídatelné události?</a>
-                </li>
-                <li class="o-footer__list-item">
-                    <a class="o-footer__list-link" href="#">Drahé kovy? Dobrá volba, míní Češi. Na co si dát pozor při investici do drahých kovů.</a>
-                </li>
+                {{ $pages := where .Site.RegularPages "Type" "clanky" }}
+                {{ range first 2 (sort $pages ".Params.publish_date" "desc") }}
+                    <li class="o-footer__list-item">
+                        <a class="o-footer__list-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
                 <li class="o-footer__list-item">
                     <a class="o-footer__list-link" href="/clanky">A další ...</a>
                 </li>

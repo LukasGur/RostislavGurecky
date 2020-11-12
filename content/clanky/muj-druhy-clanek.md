@@ -5,10 +5,8 @@ author:
   author_photo: "/images/unknown-person.png"
   author_name: ''
 category: Finance
-public_date: '2020-11-10T00:00:00+01:00'
-publishing__date: '2020-11-11T00:00:00.000+01:00'
 create_date: 2020-11-12T10:42:34+01:00
-publish___date: 2020-11-11T10:42:34+01:00
+publish_date: 2020-11-11T10:42:34+01:00
 
 ---
 Třeba se vás tohle téma ještě netýká nebo naopak už jste v řádném důchodu. Ale pro ty, kterým se blíží důchodový věk a zvažují, že odejdou do předdůchodu nebo předčasného důchodu, je tohle téma aktuální. Mezi předdůchodem a předčasným důchodem totiž existuje několik významných rozdílů.

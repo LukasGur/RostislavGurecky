@@ -72,6 +72,8 @@ fields:
       required: false
     label: Autorova webová stránka
     description: Odkaz na autorovu webovou stránku.
+    showOnly:
+      field: rostislav_gurecky
   label: Autor
 pages:
 - content/clanky/dnes-to-bude-dalsi-zkusebni-clanek-takze-se-moc-neteste.md

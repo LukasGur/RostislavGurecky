@@ -4,146 +4,212 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
-- type: field_group
-  name: seo
-  label: seo
-  fields:
-  - type: text
-    name: description
-    label: description
-  - type: text
-    name: robots
-    label: robots
+  label: Titulek
+  description: Titulek stránky který se bude zobrazovat na záložce v prohlížeči.
+  config:
+    required: true
 - type: field_group
   name: introduction
-  label: introduction
   fields:
   - type: text
     name: heading
-    label: heading
+    label: Hlavní nadpis
+    config:
+      required: true
   - type: text
     name: subheading
-    label: subheading
+    label: Hlavní podnadpis
+    config:
+      required: true
   - type: field_group
     name: button
-    label: button
+    label: Tlačítko v intru
     fields:
     - type: text
       name: text
-      label: text
+      label: Text
+      description: Text který se bude zobrazovat v tlačítku.
+      config:
+        required: true
     - type: text
       name: type
-      label: type
+      label: Typ/styl tlačítka
+      config:
+        required: true
     - type: text
       name: url
-      label: url
+      label: Url
+      description: Kam tlačítko bude směřovat
+      config:
+        required: true
+  label: Intro
+  description: První sekce kterou člověk uvidí když přijde na hlavní stránku.
 - type: field_group
-  name: experiences
-  label: experiences
+  name: skills
   fields:
   - type: text
     name: heading
-    label: heading
+    label: Nadpis sekce
+    config:
+      required: true
   - type: text
     name: subheading
-    label: subheading
+    label: Podnadpis
+    config:
+      required: true
   - type: field_group_list
     name: buttons
-    label: buttons
     fields:
     - type: text
       name: type
-      label: type
+      label: Typ tlačítka
+      config:
+        required: true
+      description: Jak tlačítko bude vypadat
     - type: text
       name: text
-      label: text
+      label: Text
+      description: Text napsaný v tlačítku
+      config:
+        required: true
     - type: text
       name: url
-      label: url
+      label: URL
+      description: Kam tlačítko bude směřovat
+      config:
+        required: true
+    label: Tlačítka
+    description: Tlačítka ve spodní části sekce
+    config:
+      min: 2
+      max: 2
   - type: field_group
     name: financialPrograms
-    label: financialPrograms
     fields:
     - type: text
       name: name
-      label: name
+      config:
+        required: true
+      label: Název
     - type: list
       name: categories
-      label: categories
+      label: Kategorie
+      config:
+        use_select: false
+    label: Finanční programy
   - type: field_group
     name: insurance
-    label: insurance
     fields:
     - type: text
       name: name
-      label: name
+      label: Název
     - type: list
       name: categories
-      label: categories
+      label: Kategorie
+    label: Pojištění
   - type: field_group
     name: loans
-    label: loans
     fields:
     - type: text
       name: name
-      label: name
+      label: Název
     - type: list
       name: categories
-      label: categories
+      label: Kategorie
+    label: Úvěry
+  label: Sekce Co dokážu
 - type: field_group
   name: whyMe
-  label: whyMe
   fields:
   - type: text
     name: heading
-    label: heading
+    label: Hlavní nadpis sekce
+    config:
+      required: true
   - type: field_group_list
     name: buttons
-    label: buttons
     fields:
     - type: text
       name: type
-      label: type
+      label: Typ tlačítka
+      config:
+        required: true
+      description: Vzhled
     - type: text
       name: text
-      label: text
+      label: Text tlačítka
+      description: Jaký text se v tlačítku bude zobrazovat.
+      config:
+        required: true
     - type: text
       name: url
-      label: url
+      label: URL
+      description: Kam tlačítko bude směrovat
+      config:
+        required: true
+    label: Tlačítka ve spodní části sekce
+    config:
+      min: 2
+      max: 2
   - type: field_group_list
     name: content
-    label: content
     fields:
     - type: text
       name: title
-      label: title
+      label: Nadpis
+      description: Napis kontentu
+      config:
+        required: true
     - type: text
       name: icon
-      label: icon
+      label: Ikonka
+      config:
+        required: true
     - type: textarea
       name: text
-      label: text
+      label: Text
+      config:
+        required: true
+    label: Kontent
+  label: Sekce Proč já
 - type: field_group
   name: businessCard
-  label: businessCard
   fields:
   - type: text
     name: heading
-    label: heading
+    label: Hlavní nadpis sekce
+    config:
+      required: true
   - type: field_group_list
     name: buttons
-    label: buttons
     fields:
     - type: text
       name: type
-      label: type
+      label: Typ tlačítka
+      description: Jak tlačítko bude vypadat
+      config:
+        required: true
     - type: text
       name: text
-      label: text
+      label: Text
+      description: Co v tlačítku bude napsáno
+      config:
+        required: true
     - type: text
       name: url
-      label: url
+      label: URL
+      description: Kam tlačítko bude směřovat
+      config:
+        required: true
+    label: Tlačítka ve spodní části vizitky
   - type: textarea
     name: poem
-    label: poem
+    label: Citát
+  - name: profilovy_obrazek
+    type: file
+    config:
+      maxSize: 64
+    label: Profilový obrázek
+    description: Obrázek na vizitce
+    default: "/images/rostislav_gurecky.JPG"
+  label: Sekce Vizitka

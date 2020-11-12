@@ -19,7 +19,7 @@ fields:
     display_utc: false
   hidden: true
   default: now
-- name: publishing__date
+- name: publish___date
   type: datetime
   label: Datum zveřejnění
   description: ''

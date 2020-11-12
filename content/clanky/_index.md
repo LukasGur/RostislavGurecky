@@ -7,6 +7,5 @@ button:
   text: Seznam článků
   type: white
   url: "#list"
-draft: true
 
 ---

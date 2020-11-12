@@ -1,6 +1,6 @@
 ---
 title: Používání okamžitých plateb má svoje limity
-public_date: 2020-11-06T00:00:00+01:00
+public_date: 2020-11-05T00:00:00+01:00
 category: Technologie
 author:
   author_is_rostislav_gurecky: true

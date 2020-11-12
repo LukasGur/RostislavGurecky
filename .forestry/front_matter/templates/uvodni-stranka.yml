@@ -1,0 +1,149 @@
+---
+label: Úvodní stránka
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: robots
+    label: robots
+- type: field_group
+  name: introduction
+  label: introduction
+  fields:
+  - type: text
+    name: heading
+    label: heading
+  - type: text
+    name: subheading
+    label: subheading
+  - type: field_group
+    name: button
+    label: button
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: url
+      label: url
+- type: field_group
+  name: experiences
+  label: experiences
+  fields:
+  - type: text
+    name: heading
+    label: heading
+  - type: text
+    name: subheading
+    label: subheading
+  - type: field_group_list
+    name: buttons
+    label: buttons
+    fields:
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+  - type: field_group
+    name: financialPrograms
+    label: financialPrograms
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: list
+      name: categories
+      label: categories
+  - type: field_group
+    name: insurance
+    label: insurance
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: list
+      name: categories
+      label: categories
+  - type: field_group
+    name: loans
+    label: loans
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: list
+      name: categories
+      label: categories
+- type: field_group
+  name: whyMe
+  label: whyMe
+  fields:
+  - type: text
+    name: heading
+    label: heading
+  - type: field_group_list
+    name: buttons
+    label: buttons
+    fields:
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+  - type: field_group_list
+    name: content
+    label: content
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: icon
+      label: icon
+    - type: textarea
+      name: text
+      label: text
+- type: field_group
+  name: businessCard
+  label: businessCard
+  fields:
+  - type: text
+    name: heading
+    label: heading
+  - type: field_group_list
+    name: buttons
+    label: buttons
+    fields:
+    - type: text
+      name: type
+      label: type
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+  - type: textarea
+    name: poem
+    label: poem

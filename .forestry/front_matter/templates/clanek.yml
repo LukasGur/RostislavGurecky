@@ -24,7 +24,7 @@ fields:
   description: ''
   config:
     required: true
-    date_format: 
+    date_format: D. M. Y
     time_format: 
     display_utc: false
   default: now

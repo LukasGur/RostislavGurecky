@@ -8,7 +8,7 @@ author:
   author_name: ''
   author_photo: ''
 publishing__date: '2020-11-01T00:00:00.000+01:00'
-publish___date: 2020-11-01T00:00:00+01:00
+publish___date: 2020-11-02T00:00:00+01:00
 
 ---
 ## Dobrý den

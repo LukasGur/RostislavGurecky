@@ -8,13 +8,12 @@ introduction:
     text: Seznam článků
     type: white
     url: "#list"
-list: 
-  buttons:
-    - text: Hlavní stránka
-      type: white
-      url: "/"
-    - text: Kontaktní formulář >
-      type: white-outline
-      url: "/mam-zajem"
+buttons:
+  - text: Hlavní stránka
+    type: white
+    url: "/"
+  - text: Kontaktní formulář >
+    type: white-outline
+    url: "/mam-zajem"
 
 ---

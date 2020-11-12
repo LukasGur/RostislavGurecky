@@ -42,21 +42,34 @@ fields:
     type: boolean
     label: Autorem je Rostislav Gurecký
     default: true
-  - name: photo
-    type: file
+  - name: name
+    type: text
     config:
-      maxSize: 64
-    label: Autorova fotka
+      required: false
+    label: Autorovo celé jméno
     showOnly:
-      field: author_is_rostislav_gurecky
-      value: false
-    default: "/images/unknown-person.png"
+      field: rostislav_gurecky
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Autorův email
+    showOnly:
+      field: rostislav_gurecky
   - name: url
     type: text
     config:
       required: false
     label: Autorova webová stránka
     description: Odkaz na autorovu webovou stránku.
+    showOnly:
+      field: rostislav_gurecky
+  - name: photo
+    type: file
+    config:
+      maxSize: 64
+    label: Autorova fotka
+    default: "/images/unknown-person.png"
     showOnly:
       field: rostislav_gurecky
   label: Autor

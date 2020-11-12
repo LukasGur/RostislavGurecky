@@ -9,6 +9,8 @@ sections:
   label: Úvodní stránka
   create: all
   match: _index.md
+  templates:
+  - uvodni-stranka
 - type: directory
   path: content/clanky
   label: Blog

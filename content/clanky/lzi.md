@@ -1,12 +1,15 @@
 ---
 title: Lži
 create_date: 2020-11-02T00:00:00.000+01:00
-publish_date: 2020-11-01T00:00:00+01:00
+publish_date: 2020-11-01T00:00:00.000+01:00
 category: Zkušební článek
 author:
   rostislav_gurecky: true
   name: ''
-  photo: ''
+  photo: "/images/unknown-person.png"
+  email: ''
+  url: ''
+
 ---
 ## Dobrý den
 

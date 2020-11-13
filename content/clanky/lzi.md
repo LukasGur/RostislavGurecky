@@ -8,7 +8,7 @@ author:
   name: Lukáš Gurecký
   photo: "/images/unknown-person.png"
   email: l.gurecky@seznam.cz
-  url: noltio.com
+  url: https://noltio.com
 
 ---
 ## Dobrý den

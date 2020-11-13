@@ -2,23 +2,47 @@
     <section>
         <div class="c-container c-standard">
             <div class="c-blog-post__head">
-                <span class="c-blog-list__item-badge">{{ .Params.category }}</span>
-                <a href="/clanky" class="u-btn u-btn--small u-btn--white" style="float: right">&#10554; Zpět</a>
+                <div class="c-blog-post__head-left">
+                    <span class="c-blog-list__item-badge">{{ .Params.category }}</span>
+                    {{ dateFormat "02. 01. 2006" .Params.publish_date }}
+                </div>
+                <a href="/clanky" class="u-btn u-btn--small u-btn--white c-blog-post__head-button">&#10554; Zpět</a>
             </div>
             <h2 class="c-standard__title t-text--orange">{{ .Title }}</h2>
             <div class="c-blog-post__content">
                 {{ .Content }}
             </div>
             <div class="c-blog-post__footer">
-                {{ dateFormat "02. 01. 2006" .Params.publish_date }}
                 {{ if .Params.author.rostislav_gurecky }}
-                    Rostislav Gurecký
-                    <img src="/" alt="">
+                <div class="c-blog-post__author">
+                    <h3 class="c-blog-post__author-title">Autor článku</h3>
+                    <div class="c-blog-post__author-box">
+                        <img class="c-blog-post__author-photo" src="/images/rostislav_gurecky.JPG" alt="">
+                        <div class="c-blog-post__author-informations">
+                            <span class="c-blog-post__author-informations-item">Rostislav Gurecký</span>
+                            <a class="c-blog-post__author-informations-item" href="mailto:{{ .Site.Params.contact.email.corporate }}">{{ .Site.Params.contact.email.corporate }}</a>
+                            <a class="c-blog-post__author-informations-item" href="/">{{ .Site.BaseURL }}</a>
+                        </div>
+                    </div>
+                </div>
                 {{ else }}
-                    {{ .Params.author.name }}
-                    {{ .Params.author.email }}
-                    {{ .Params.author.photo }}
+                <div class="c-blog-post__author">
+                    <h3 class="c-blog-post__author-title">Autor článku</h3>
+                    <div class="c-blog-post__author-box">
+                        <img class="c-blog-post__author-photo" src="{{ .Params.author.photo }}" alt="Profilová fotka autora {{ .Params.author.name }}">
+                        <div class="c-blog-post__author-informations">
+                            <span class="c-blog-post__author-informations-item">{{ .Params.author.name }}</span>
+                            {{ if .Params.author.email }}
+                            <a class="c-blog-post__author-informations-item" href="mailto:{{ .Params.author.email }}">{{ .Params.author.email }}</a>
+                            {{ end }}
+                            {{ if .Params.author.url }}
+                            <a class="c-blog-post__author-informations-item" target="_blank" href="{{ .Params.author.url }}">{{ .Params.author.url }}</a>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
                 {{ end }}
+                <a href="/clanky" class="u-btn u-btn--white">Zpět na seznam &gt;</a>
             </div>
         </div>
     </section>

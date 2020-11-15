@@ -44,6 +44,7 @@
         @include md {
             margin-right: 0;
             margin-bottom: 2rem;
+            padding: 2rem 2rem;
         }
     }
 
@@ -74,6 +75,20 @@
     &__author-informations-item {
         color: map-get($colors, orange-dark );
         margin-bottom: 0.2rem;
+
+        &--link {
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            max-width: 400px;
+        }
+
+        @include lg {
+            &--link {
+                text-overflow: ellipsis;
+                overflow: hidden; 
+                max-width: 300px;
+            }
+        }
     }
 
     &__content {

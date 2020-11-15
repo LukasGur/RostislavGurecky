@@ -6,16 +6,29 @@
         align-items: center;
         margin-bottom: 2rem;
         color: map-get($colors, orange-dark );
+
+        @include md {
+            margin: 2rem 0;
+        }
     }
 
     &__footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include md {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
     }
 
     &__head-button {
         float: right;
+
+        @include md {
+            display: none;
+        }
     }
 
     &__author {
@@ -26,6 +39,12 @@
              -7px -7px 14px #ffffff;
         color: map-get($colors, orange-dark );
         border: #f0f0f0 1px solid;
+        margin-right: 2rem;
+
+        @include md {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
     }
 
     &__author-box {
@@ -41,6 +60,10 @@
         max-width: 100px;
         border-radius: 15px;
         margin-right: 2rem;
+
+        @include sm {
+            display: none;
+        }
     }
 
     &__author-informations {

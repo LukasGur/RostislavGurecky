@@ -6,7 +6,7 @@
         height: 12rem;
         top: 7rem;
 
-        @media(max-width: 1129px) {
+        @include xl {
             display: none;
         }
     }

@@ -1,6 +1,6 @@
 .o-header {
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     background-color: map-get($colors, white );
     position: fixed;
     box-shadow: none;
@@ -13,6 +13,15 @@
     &__contact {
         background-color: map-get($colors, orange );
         padding: 0.2rem;
+
+        @include sm {
+            .c-container {
+                margin: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 
     &__contact-container {
@@ -52,6 +61,8 @@
 
 
     &__link-logo {
+        position: relative;
+        top: 3px;
         padding: 10px 0;
     }
 }

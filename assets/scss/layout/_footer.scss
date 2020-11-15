@@ -7,10 +7,28 @@
     &__box {
         display: flex;
         justify-content: space-between;
+
+        @include xl {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem 0;
+            justify-items: center;
+        }
+
+        @include md {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__section {
         max-width: 200px;
+
+        @include md {
+            display: none;
+            &:last-child, &:first-child {
+                display: block;
+            }
+        }
 
         &--brand {
             max-width: 300px;

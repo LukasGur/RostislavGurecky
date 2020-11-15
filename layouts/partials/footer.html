@@ -63,11 +63,29 @@
     $(document).ready(function() {
         // add header scrolled class when page scrolled
         $(window).scroll(function() {
+            // check scroll distance
             if ($(this).scrollTop() > 20) {
                 $('.o-header').addClass('o-header--scrolled');
             }
             else {
                 $('.o-header').removeClass('o-header--scrolled');
+            }
+        });
+
+        // click on mobile menu button or item in mobile menu
+        $('.o-nav__btn-mobile, .o-nav__item').click(function(e) {
+            // if clicked on mobile menu button -> prevent
+            if ($(this).is('.o-nav__btn-mobile')) {
+                e.preventDefault();
+            }
+            // toggle class
+            $('.o-nav__btn-mobile').toggleClass('o-nav__btn-mobile--open');
+            // toggle css
+            if ($('.o-nav__btn-mobile').hasClass('o-nav__btn-mobile--open')) {
+                $('.o-nav').css('transform', 'translate(0%)');
+            }
+            else {
+                $('.o-nav').css('transform', 'translate(100%)');
             }
         });
     })

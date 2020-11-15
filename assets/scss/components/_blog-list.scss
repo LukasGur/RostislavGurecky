@@ -5,6 +5,10 @@
         padding-top: 6rem;
         margin-bottom: 1.5rem;
 
+        @include md {
+            padding-top: 4rem;
+        }
+
         &::after {
             content: url('/images/content.svg');
             position: absolute;
@@ -12,9 +16,23 @@
             top: 65px;
             width: 58%;
             z-index: -1;
-            // opacity: 0.3;
-            // filter: alpha(opacity = 30);
-            // transform: scale(-1, 1);
+
+            @include xl {
+                top: 7rem;
+                right: 5rem;
+                opacity: 0.8;
+                filter: alpha(opacity = 80);
+                transform: scale(-1, 1);
+            }
+
+            @include lg {
+                top: 10rem;
+                right: 0rem;
+            }
+
+            @include md {
+                top: 7rem;
+            }
         }
     }
 
@@ -22,12 +40,24 @@
         margin-bottom: 5rem;
         width: 100%;
         max-width: 750px;
+
+        @include md {
+            margin-bottom: 3rem;
+        }
     }
     
     &__title {
         font-size: 4rem;
         line-height: 1.2em;
         color: map-get($colors, orange-dark );
+
+        @include lg {
+            font-size: 3rem;
+        }
+
+        @include md {
+            font-size: 2rem;
+        }
     }
 
     &__subtitle {
@@ -37,6 +67,10 @@
         font-weight: 600;
         line-height: 2rem;
         width: 60%;
+
+        @include md {
+            display: none;
+        }
     }
 
     &__item {
@@ -50,6 +84,10 @@
         background: linear-gradient(145deg, #ffffff, #dddddd);
         box-shadow:  20px 20px 20px #d0d0d0, 
              -20px -20px 20px #ffffff;
+
+        @include lg {
+            padding: 3rem 2rem;
+        }
 
         &:hover .c-blog-list__item-title {
             color: map-get($colors, orange );
@@ -76,6 +114,10 @@
             left: -15px;
             transition: 0.2s;
         }
+
+        @include xl {
+            font-size: 1.2rem;
+        }
     }
 
     &__item-summary {
@@ -85,6 +127,19 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+
+        @include xl {
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+
+        @include lg {
+            display: none;
+        }
+
+        @include md {
+            display: -webkit-box;
+        }
     }
 
     &__item-footer {

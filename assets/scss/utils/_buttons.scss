@@ -8,6 +8,11 @@
     border: none;
     text-align: center;
 
+    @include sm {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
     &--primary {
         color: map-get($colors, white );
         background: map-get($colors, orange );

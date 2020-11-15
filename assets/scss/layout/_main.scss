@@ -14,4 +14,8 @@ html {
     max-width: 1080px;
     margin: auto;
     width: 80%;
+
+    @include sm {
+        width: 85%;
+    }
 }

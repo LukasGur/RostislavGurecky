@@ -24,6 +24,8 @@ sections:
   label: Formulář
   create: all
   match: mam-zajem.md
+  templates:
+  - formular
 - type: directory
   path: ''
   label: Config!

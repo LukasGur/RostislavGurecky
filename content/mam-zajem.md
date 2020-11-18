@@ -2,12 +2,12 @@
 title: Formulář
 type: mam-zajem
 interest:
-- name: Uvery
+- name: Úvěry
   subcategories:
-  - Hypoteky
-  - Stavebni sporeni
-  - Bytova druzstva
-- name: Pojisteni
+  - Hypotéky
+  - Stavební spoření
+  - Bytová družstva
+- name: Pojištění
   subcategories:
   - Životní
   - Úrazové

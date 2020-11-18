@@ -1,7 +1,7 @@
 ---
 title: Hlavní stránka
 introduction:
-  heading: Finanční poradenství pro snadnější život.
+  heading: neco.
   subheading: Srozumitelně.
   button:
     text: Co dokážu zařídit

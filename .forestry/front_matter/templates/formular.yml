@@ -21,8 +21,7 @@ fields:
       required: false
     label: Název kategorie
   - name: subcategories
-    type: field_group
-    config: {}
+    type: field_group_list
     fields:
     - name: name
       type: text
@@ -31,9 +30,13 @@ fields:
       label: Název podkategorie
       description: 'Název podkategorie např: Pokud je kategorie pojištění, tak podkategoriemi
         jsou životní, úrazové, havarijní, atd..'
-    description: 'Podkategorie např: Pokud je kategorie pojištění, tak podkategoriemi
-      jsou životní, úrazové, havarijní, atd..'
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Podkategorie
+    description: 'Podkategorie pro tuto kategorii. Např: Pokud je tato kategorie pojištění,
+      tak podkategoriemi jsou životní, úrazové, havarijní, atd..'
   config:
     min: 1
     max: 

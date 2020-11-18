@@ -4,7 +4,27 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  description: Titulek stránky který se bude zobrazovat na záložce v prohlížeči.
+  label: Titulek stránky
+  config:
+    required: true
 - type: text
   name: type
   label: type
+  hidden: true
+- name: interest
+  type: field_group_list
+  fields:
+  - name: name
+    type: field_group
+    config: {}
+    label: Název
+    description: 'Název dané podkategorie např: Pokud je kategorie pojištění, tak
+      podkategoriemi jsou životní, úrazové, havarijní, atd..'
+  config:
+    min: 1
+    max: 
+    labelField: 
+  description: Ve formuláři po vybrání kategorie zájmu se zobrazí tyto podkategorie
+    s čím přesně chce klient pomoci.
+  label: Kategorie zájmu

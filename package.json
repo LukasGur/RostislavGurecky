@@ -1,0 +1,29 @@
+{
+  "name": "rostislavgurecky",
+  "version": "1.0.0",
+  "description": "The official Rostislav Gurecky website.",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all -s \"build:*\"",
+    "build:hugo": "hugo --gc --minify",
+    "build:postcss": "postcss public/css/*.css --dir public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasGur/RostislavGurecky.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukasGur/RostislavGurecky/issues"
+  },
+  "homepage": "https://github.com/LukasGur/RostislavGurecky#readme"
+}

@@ -46,9 +46,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- stylesheets -->
-    {{ $style := resources.Get "scss/main.scss" }}
-    {{ $style = $style | toCSS | minify | fingerprint  }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") }}
+    {{ if eq hugo.Environment "production" }}
+        {{ $style = $style | postCSS | fingerprint }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">

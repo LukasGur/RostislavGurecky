@@ -74,10 +74,15 @@
 
         // click on mobile menu button or item in mobile menu
         $('.o-nav__btn-mobile, .o-nav__item').click(function(e) {
-            // if clicked on mobile menu button -> prevent
-            if ($(this).is('.o-nav__btn-mobile')) {
+            // check if mobile menu button is visible
+            if ($('.o-nav__btn-mobile').is(':hidden')) {
+                return;
+            }
+            // clicked on mobile menu button -> prevent default
+            else if ($(this).is('.o-nav__btn-mobile')) {
                 e.preventDefault();
             }
+
             // toggle class
             $('.o-nav__btn-mobile').toggleClass('o-nav__btn-mobile--open');
             // toggle css

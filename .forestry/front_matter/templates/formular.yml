@@ -16,11 +16,16 @@ fields:
   type: field_group_list
   fields:
   - name: name
+    type: text
+    config:
+      required: false
+    label: Název kategorie
+  - name: subcategories
     type: field_group
     config: {}
-    label: Název
-    description: 'Název dané podkategorie např: Pokud je kategorie pojištění, tak
-      podkategoriemi jsou životní, úrazové, havarijní, atd..'
+    description: 'Název podkategorie např: Pokud je kategorie pojištění, tak podkategoriemi
+      jsou životní, úrazové, havarijní, atd..'
+    label: Název podkategorie
   config:
     min: 1
     max: 

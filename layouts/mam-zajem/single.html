@@ -16,7 +16,7 @@
                     <a href="/" class="u-btn u-btn--white u-btn--small">&#10554; Zpět na úvod</a>
                 </div>
                 <div class="c-interest__radio-box">
-                    <input class="c-interest__radio" type="radio" id="potreba-a" data-selection="finance" value="Finanční programy" name="potreba">
+                    <input class="c-interest__radio" type="radio" id="potreba-a" data-selection="Finance" value="Finanční programy" name="Kategorie">
                     <label for="potreba-a" class="c-interest__label">
                         <span class="c-interest__label-title">
                             Finanční programy
@@ -27,7 +27,7 @@
                         </p>
                     </label>
 
-                    <input class="c-interest__radio" type="radio" id="potreba-b" data-selection="pojisteni" value="Pojištění" name="potreba">
+                    <input class="c-interest__radio" type="radio" id="potreba-b" data-selection="Pojištění" value="Pojištění" name="Kategorie">
                     <label for="potreba-b" class="c-interest__label">
                         <span class="c-interest__label-title">
                             Pojištění
@@ -38,7 +38,7 @@
                         </p>
                     </label>
 
-                    <input class="c-interest__radio" type="radio" id="potreba-c" data-selection="uvery" value="Úvěry na bydlení" name="potreba">
+                    <input class="c-interest__radio" type="radio" id="potreba-c" data-selection="Úvěry" value="Úvěry na bydlení" name="Kategorie">
                     <label for="potreba-c" class="c-interest__label">
                         <span class="c-interest__label-title">
                             Úvěry na bydlení
@@ -49,7 +49,7 @@
                         </p>
                     </label>
 
-                    <input class="c-interest__radio" type="radio" id="potreba-d" data-selection="unknow" value="Nevím" name="potreba">
+                    <input class="c-interest__radio" type="radio" id="potreba-d" data-selection="unknow" value="Nevím" name="Kategorie">
                     <label for="potreba-d" class="c-interest__label">
                         <span class="c-interest__label-title">
                             Nevím
@@ -69,101 +69,31 @@
             <div id="page-2" class="c-interest__page">
                 <div class="c-interest__title-box">
                     <span>
-                        <h2 class="c-interest__title">S&nbsp;čím vám pomůžu?</h2>
+                        <h2 class="c-interest__title"></h2>
                         <span class="c-interest__title-alert">Můžete vybrat více možností.</span>
                     </span>
                     <a href="#" data-back-page="1" class="back-button u-btn u-btn--white u-btn--small">&#10554; Zpět</a>
                 </div>
+                
+                {{ range $element := .Params.interest }}
+                    <div class="c-interest__checkbox-box t-d-none--important" data-selection="{{ .name }}">
+                        {{ range $index, $item := (.subcategories) }}
+                            <input class="c-interest__radio" type="checkbox" id="{{ $element.name }}-{{ $index }}" value="{{ . }}" name="Podkategorie">
+                            <label for="{{ $element.name }}-{{ $index }}" class="c-interest__label">
+                                <span class="c-interest__label-text">
+                                    {{ . }}
+                                </span>
+                            </label>
+                        {{ end }}
 
-                <div class="c-interest__checkbox-box t-d-none--important" data-selection="pojisteni">
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Odpovědnosti vozidel
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-
-                    <input class="c-interest__radio" type="checkbox" id="type-1" value="Finanční program" name="typ potreby">
-                    <label for="type-1" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Pojisteni
-                        </span>
-                    </label>
-                </div>
-
-                <div class="c-interest__checkbox-box t-d-none--important" data-selection="uvery">
-                    <input class="c-interest__radio" type="checkbox" id="type-2" value="Finanční program" name="typ potreby">
-                    <label for="type-2" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Uvery
-                        </span>
-                    </label>
-                </div>
-
-                <div class="c-interest__checkbox-box t-d-none--important" data-selection="finance">
-                    <input class="c-interest__radio" type="checkbox" id="type-3" value="Finanční program" name="typ potreby">
-                    <label for="type-3" class="c-interest__label">
-                        <span class="c-interest__label-text">
-                            Finance
-                        </span>
-                    </label>
-                </div>
+                        <input class="c-interest__radio" type="checkbox" id="{{ $element.name }}-X" value="Jiné" name="Podkategorie">
+                        <label for="{{ $element.name }}-X" class="c-interest__label">
+                            <span class="c-interest__label-text">
+                                Jiné
+                            </span>
+                        </label>
+                    </div>
+                {{ end }}
 
                 <div class="c-standard__footer">
                     <a href="#" data-back-page="1" class="back-button u-btn u-btn--white">&#10554; Zpět</a>
@@ -249,7 +179,7 @@
         // start the listeners when the page is fully rendered
         $(document).ready(function () {
             // global variable for save value from #page-1
-            let firstPageValue;
+            let firstPageSelection;
 
             // page 1 test
             $('#page-1 input[type=radio]').change(function () {
@@ -259,14 +189,17 @@
                 $('#page-2 .next-button').addClass('u-btn--disabled').attr('disabled', true);
                 
                 if ($('#page-1 input[type=radio]:checked').length > 0) {
-                    firstPageValue = $('#page-1 input[type=radio]:checked').data('selection');
+                    firstPageSelection = $('#page-1 input[type=radio]:checked').data('selection');
+                    firstPageValue = $('#page-1 input[type=radio]:checked').val();
 
                     // remove disable class for next button
                     $('#page-1 .next-button').removeClass('u-btn--disabled').attr('disabled', false);
                     // in #page-2 add all containers display none class
                     $('#page-2 .c-interest__checkbox-box').addClass('t-d-none--important');
                     // remove display none class from coming #page-2 box
-                    $('#page-2 .c-interest__checkbox-box[data-selection="'+ firstPageValue +'"]').removeClass('t-d-none--important');
+                    $('#page-2 .c-interest__checkbox-box[data-selection="'+ firstPageSelection +'"]').removeClass('t-d-none--important');
+                    // change title on second page
+                    $('#page-2 .c-interest__title').text(firstPageValue);
                 }
                 else {
                     $('#page-1 .next-button').addClass('u-btn--disabled').attr('disabled', true);
@@ -326,8 +259,8 @@
                 // get next page number and switch the pages
                 var nextPage = $(this).data('next-page');
                 $('#page-' + (nextPage-1)).fadeOut(function () {
-                    // check firstPageValue and go through twice when Value is 'unknow' && nextPage == 2
-                    if (nextPage === 2 && firstPageValue === 'unknow') {
+                    // check firstPageSelection and go through twice when Value is 'unknow' && nextPage == 2
+                    if (nextPage === 2 && firstPageSelection === 'unknow') {
                         nextPage += 1;
                     }
                     // fadeIn new page
@@ -349,8 +282,8 @@
                 // get next page number and switch the pages
                 var backPage = $(this).data('back-page');
                 $('#page-' + (backPage+1)).fadeOut(function () {
-                    // check firstPageValue and go back twice when Value is 'unknow' && backPage == 2
-                    if (backPage === 2 && firstPageValue === 'unknow') {
+                    // check firstPageSelection and go back twice when Value is 'unknow' && backPage == 2
+                    if (backPage === 2 && firstPageSelection === 'unknow') {
                         backPage -= 1;
                     }
                     // fadeIn new page

@@ -48,7 +48,7 @@
     <!-- stylesheets -->
     {{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") }}
     {{ if eq hugo.Environment "production" }}
-        {{ $style = $style | postCSS | fingerprint }}
+        {{ $style = $style | fingerprint }}
     {{ end }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 

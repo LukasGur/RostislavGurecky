@@ -5,7 +5,7 @@
             vyborně
         </div>
 
-        <form name="Poptávka" method="POST" id="interest" class="c-interest" data-netlify="true">
+        <form name="Poptávka" action="POST" id="interest" class="c-interest" data-netlify="true">
 
             <div id="page-1" class="c-interest__page">
                 <div class="c-interest__title-box">
@@ -139,17 +139,16 @@
                 </div>
 
                 <div class="c-interest__group">
-                    <textarea placeholder="Dobrý den ..." class="c-interest__group-textarea" name="note" id="textarea-note" class="u-inquiry__textarea" rows="5"></textarea>
+                    <textarea class="c-interest__group-textarea" name="note" id="textarea-note" rows="5"></textarea>
                     <label class="c-interest__textarea-label" for="tel">Obsah zprávy</label>
                 </div>
-                
+
+                <div class="g-recaptcha" data-sitekey="6LfpcuQZAAAAAGXkTwYtD9aBQyiaviWJSbaskEmE" data-callback="onRecaptchaTest" data-size="invisible">
+                </div>
                 
                 <div class="c-standard__footer t-mt-3rem">
                     <a href="#" data-back-page="3" class="back-button u-btn u-btn--white">&#10554; Zpět</a>
-                    <a href="#" data-next-page="4" class="u-btn u-btn--white-outline next-button" disabled>Odeslat &#8594;</a>
-                </div>
-
-                <div class="g-recaptcha" data-sitekey="6Le_sdkZAAAAAP8L7Q1ajkzJsM9oE0pqxis_rEzv" data-callback="onRecaptchaTest" data-size="invisible">
+                    <a href="#" class="send-button u-btn u-btn--white-outline">Odeslat &#8594;</a>
                 </div>
             </div>
         </form>
@@ -163,16 +162,16 @@
          * @description Serialize the form data and send them to the server
          */
          function onRecaptchaTest() {
-            var form = $('#inquiry');
+            var form = $('#interest');
             $.post(form.attr('action'), form.serialize()).then(function() {
-                $('#inquiry').fadeOut(function () {
-                    $('#particles, #msg-sent').fadeIn();
+                $('#interest').fadeOut(function () {
+                    $('#msg-sent').fadeIn();
                 });
             });
         }
 
-        // hide the inquiry form container
-        $('.u-inquiry__page, #msg-sent, .c-interest__page').fadeOut(0);
+        // hide the interest form container
+        $('#msg-sent, .c-interest__page').fadeOut(0);
         // display first step from form
         $('.c-interest__page:first').fadeIn();
 
@@ -302,8 +301,8 @@
             // send button
             $('.send-button').click(function () {
                 // serialize the form data
-                var data = $('form#inquiry').serialize();
-                
+                var data = $('form#interest').serialize();
+
                 // do the recaptcha test
                 grecaptcha.execute();
             });

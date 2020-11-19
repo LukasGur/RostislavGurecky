@@ -22,9 +22,9 @@ skills:
     categories:
     - Stavební spoření
     - Penzijní spoření
+    - Investiční zlato
     - Investice
     - Energie
-    - Investiční zlato
   insurance:
     name: Pojištění
     categories:
@@ -38,8 +38,8 @@ skills:
     name: Úvěry na bydlení
     categories:
     - Hypotéky
-    - Stavební spoření
     - Bytová družstva
+    - Stavební spoření
 whyMe:
   heading: Proč se mnou?
   buttons:

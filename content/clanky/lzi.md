@@ -17,8 +17,6 @@ tak jsem jednou šel a to vám povídám, on se nenechal napálit, proto se mu �
 
 ### Není tak jednoduché jít v obchoďáku
 
-Už to pochopte lidi!! Já tu roušku nesnáším a oni ji chtějí už aji venku.
-
 ![fotka Lukáše Gureckého](/uploads/psfix_20201008_205047.jpeg "Lukas Gurecky")
 
 ## Kódý

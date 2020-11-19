@@ -20,7 +20,7 @@ skills:
   financialPrograms:
     name: Finanční programy
     categories:
-    - Stavevní spoření
+    - Stavební spoření
     - Penzijní spoření
     - Investice
     - Energie
@@ -30,10 +30,10 @@ skills:
     categories:
     - Životní
     - Úrazové
-    - Odpovědnosti vozidel
-    - Havarijní
-    - Cestovní
     - Zdravotní
+    - Cestovní
+    - Havarijní
+    - Odpovědnosti vozidel
   loans:
     name: Úvěry na bydlení
     categories:

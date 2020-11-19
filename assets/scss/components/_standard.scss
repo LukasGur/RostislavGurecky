@@ -39,7 +39,7 @@
         padding-bottom: 2rem;
 
         @include md {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
 
         > * {

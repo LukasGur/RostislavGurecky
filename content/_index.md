@@ -41,7 +41,7 @@ skills:
     - Stavební spoření
     - Bytová družstva
 whyMe:
-  heading: Co z&nbsp;toho budete mít?
+  heading: Proč se mnou?
   buttons:
   - type: white-outline
     text: Chci kontakt

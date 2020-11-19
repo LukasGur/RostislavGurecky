@@ -21,7 +21,7 @@ filename = "sitemap.xml"
 [params]
     domain = "https://rostislavgurecky.cz"
     siteDescription = "Finanční poradce pro Brno s více jak dvacetiletou zkušeností. Hypotéky | Pojištění | Investice | Energie "
-    googleAnalyticsId = ""
+    googleAnalyticsId = "G-TK03J36LZX"
 
     [params.contact]
         [params.contact.telephone]

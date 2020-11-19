@@ -12,11 +12,11 @@ skills:
   subheading: Vyberte si jednu z možností.
   buttons:
   - type: primary
-    text: Mám zájem
-    url: "/mam-zajem"
-  - type: primary-outline
     text: Proč se mnou?
     url: "/#proc-ja"
+  - type: primary-outline
+    text: Mám zájem
+    url: "/mam-zajem"
   financialPrograms:
     name: Finanční programy
     categories:

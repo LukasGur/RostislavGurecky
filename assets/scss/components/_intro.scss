@@ -36,8 +36,12 @@
         width: 200%;
         height: 185%;
         z-index: -1;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
 
         @media (max-width: 1300px) {
+            animation: none;
             top: 0.5rem;
             left: unset;
             right: -15%;
@@ -52,6 +56,10 @@
         margin-bottom: 6.3rem;
         width: 100%;
         max-width: 800px;
+
+        @media (max-width: 1300px) {
+            animation-delay: 0s;
+        }
 
         @media (max-width: 1000px) {
             margin-bottom: 3rem;
@@ -70,6 +78,11 @@
         font-size: 4rem;
         line-height: 1.2em;
         color: map-get($colors, orange-dark );
+        animation-name: leftSlideIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-delay: 0.5s;
 
         @media (max-width: 900px) {
             font-size: 3rem;
@@ -85,9 +98,27 @@
         margin-top: 1.3rem;
         color: map-get($colors, orange );
         font-weight: 600;
+        animation-name: leftSlideIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-delay: 1s;
 
         @media (max-width: 700px) {
             display: none;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        animation-name: fadeIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-delay: 1.7s;
+
+        @media (max-width: 700px) {
+            animation-delay: 1.2s;
         }
     }
 }

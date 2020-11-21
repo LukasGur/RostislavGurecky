@@ -1,13 +1,6 @@
-html {
-    // filter: invert(1) hue-rotate(180deg);
-}
-
-img {
-    // filter: invert(2) hue-rotate(-180deg);
-}
-
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/keyframes';
 
 @import 'base/reset';
 @import 'base/typography';

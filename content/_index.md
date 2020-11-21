@@ -43,12 +43,12 @@ skills:
 whyMe:
   heading: Proč se mnou?
   buttons:
-  - type: white-outline
-    text: Chci kontakt
-    url: "/#vizitka"
   - type: white
-    text: Vizitka?
+    text: Má vizitka
     url: "/#vizitka"
+  - type: white-outline
+    text: Zanechat kontakt
+    url: "/mam-zajem"
   content:
   - title: Přesně to, co potřebujete
     icon: target

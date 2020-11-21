@@ -1,74 +1,56 @@
-# basic site settings
-title = "Finanční poradce Brno | Rostislav Gurecký"
 baseURL = "https://testingrostislavgureckysite.netlify.app"
-summaryLength = 20
-
-# language settings
-languageCode = "cs-cz"
 defaultContentLanguage = "cs"
-
-# disabling taxonomy generator
 disableKinds = ["taxonomy", "term"]
-
-# data settings
 enableRobotsTXT = true
+languageCode = "cs-cz"
 metaDataFormat = "yaml"
-
-# sitemap output
+summaryLength = 20
+title = "Finanční poradce Brno | Rostislav Gurecký"
+[languages.cs]
+contentDir = "content"
+languageName = "Čeština"
+weight = 1
+[languages.cs.params]
+locale = "cs_CZ"
+[[menu.main]]
+name = "Úvod"
+url = "/#intro"
+weight = 1
+[[menu.main]]
+identifier = "btn"
+name = "Chci pomoc"
+url = "/mam-zajem"
+weight = 6
+[[menu.main]]
+name = "Kontakt"
+url = "/#vizitka"
+weight = 4
+[[menu.main]]
+name = "Články"
+url = "/clanky"
+weight = 5
+[[menu.main]]
+name = "Proč já"
+url = "/#proc-ja"
+weight = 3
+[[menu.main]]
+name = "Co umím"
+url = "/#dovednosti"
+weight = 2
+[params]
+domain = "https://rostislavgurecky.cz"
+googleAnalyticsId = "G-TK03J36LZX"
+siteDescription = "Finanční poradce pro Brno s více jak dvacetiletou zkušeností. Hypotéky | Pojištění | Investice | Energie "
+[params.contact.address]
+ZIP = "602 00"
+city = "Brno-sever"
+link = "https://en.mapy.cz/zakladni?x=16.6151281&y=49.2023964&z=17&source=addr&id=8907726"
+street = "Traubova 10"
+[params.contact.email]
+corporate = "rostislav.gurecky@zfpa.cz"
+personal = "r.gurecky@seznam.cz"
+[params.contact.telephone]
+formatted = "+420 777 581 730"
+raw = "+420777581730"
 [sitemap]
 filename = "sitemap.xml"
-
-[params]
-    domain = "https://rostislavgurecky.cz"
-    siteDescription = "Finanční poradce pro Brno s více jak dvacetiletou zkušeností. Hypotéky | Pojištění | Investice | Energie "
-    googleAnalyticsId = "G-TK03J36LZX"
-
-    [params.contact]
-        [params.contact.telephone]
-            raw = "+420777581730"
-            formatted = "+420 777 581 730"
-        [params.contact.address]
-            street = "Traubova 10"
-            ZIP = "602 00"
-            city = "Brno-sever"
-            link = "https://en.mapy.cz/zakladni?x=16.6151281&y=49.2023964&z=17&source=addr&id=8907726"
-        [params.contact.email]
-            corporate = "rostislav.gurecky@zfpa.cz"
-            personal = "r.gurecky@seznam.cz"
-
-
-[menu]
-    [[menu.main]]
-        name = "Úvod"
-        url = "/"
-        weight = 1
-    [[menu.main]]
-        name = "Co umím"
-        url = "/#dovednosti"
-        weight = 2
-    [[menu.main]]
-        name = "Proč já"
-        url = "/#proc-ja"
-        weight = 3
-    [[menu.main]]
-        name = "Články"
-        url = "/clanky"
-        weight = 4
-    [[menu.main]]
-        name = "Kontakt"
-        url = "/#vizitka"
-        weight = 5
-    [[menu.main]]
-        name = "Chci pomoc"
-        url = "/mam-zajem"
-        weight = 6
-        identifier = "btn"
-    
-
-[languages]
-    [languages.cs]
-        languageName = "Čeština"
-        contentDir = "content"
-        weight = 1
-        [languages.cs.params]
-            locale = "cs_CZ"

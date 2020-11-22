@@ -5,9 +5,9 @@
     {{ partialCached "header" . }}
 
     <main class="o-main">
-        {{ .Site.BaseURL }}
         {{ block "content" . }}{{ end }}
     </main>
+    
     {{ partialCached "footer" . }}
     {{ block "scripts" . }}{{ end }}
 </body>

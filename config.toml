@@ -1,25 +1,18 @@
 # basic site settings
 title = "Finanční poradce Brno | Rostislav Gurecký"
-baseURL = "https://testingrostislavgureckysite.netlify.app"
 summaryLength = 20
 
 # language settings
 languageCode = "cs-cz"
 defaultContentLanguage = "cs"
 
-# disabling taxonomy generator
-disableKinds = ["taxonomy", "term"]
-
-# data settings
 enableRobotsTXT = true
 metaDataFormat = "yaml"
 
-# sitemap output
 [sitemap]
 filename = "sitemap.xml"
 
 [params]
-    domain = "https://rostislavgurecky.cz"
     siteDescription = "Finanční poradce pro Brno s více jak dvacetiletou zkušeností. Hypotéky | Pojištění | Investice | Energie "
     googleAnalyticsId = "G-TK03J36LZX"
 

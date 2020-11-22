@@ -40,7 +40,7 @@ filename = "sitemap.xml"
 [menu]
     [[menu.main]]
         name = "Úvod"
-        url = "/"
+        url = "/#intro"
         weight = 1
     [[menu.main]]
         name = "Co umím"

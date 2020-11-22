@@ -6,7 +6,7 @@ introduction:
   button:
     text: Co dokážu zařídit
     type: white
-    url: "/#dovednosti"
+    url: "#dovednosti"
 skills:
   heading: Co dokážu zařídit.
   subheading: Vyberte si jednu z možností.

@@ -60,6 +60,10 @@
 
 <script src="/js/jQuery-3.5.1.js"></script>
 <script>
+
+    // fadeIn effect
+    $('html, body').hide().fadeIn();
+    
     $(document).ready(function() {
         // add header scrolled class when page scrolled
         $(window).scroll(function() {
@@ -91,6 +95,30 @@
             }
             else {
                 $('.o-nav').css('transform', 'translate(100%)');
+            }
+        });
+
+        // if exist location hash scroll on the element with this hash
+        if (location.hash !== ""){
+            $('html,body').scrollTop($(window.location.hash).offset().top - 75);
+            history.replaceState({}, document.title, window.location.href.split('#')[0]);
+        }
+
+        // scroll on element with the hash
+        $("a").on("click", function(e) {
+            // if exist location hash
+            if (this.hash !== "") {
+                const hash = this.hash;
+                // omit nav button
+                if (hash === "#nav") {
+                    return false
+                }
+                // scroll animation
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top - 75
+                });
+
+                return false
             }
         });
     })

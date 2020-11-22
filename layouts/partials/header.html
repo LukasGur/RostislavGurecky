@@ -20,10 +20,10 @@
             </svg>
         </a>
 
-        <a href="#" class="o-nav__btn-mobile">
+        <a href="#nav" class="o-nav__btn-mobile">
             <div class="o-nav__btn-mobile-burger"></div>
         </a>
-        
+
         <nav class="o-nav">
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}" class="o-nav__item {{ if .Identifier }} u-btn u-btn--white {{ end }}">{{ .Name }}</a>

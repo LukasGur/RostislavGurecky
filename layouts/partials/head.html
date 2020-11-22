@@ -2,11 +2,15 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
+        gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
+    </script>
+
+    <script>
+        $('html, body').hide();
     </script>
 
     <!-- encoding and browser config -->
@@ -63,5 +67,4 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
 </head>

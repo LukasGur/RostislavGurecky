@@ -4,9 +4,13 @@
         z-index: 0;
         padding-top: 6rem;
         margin-bottom: 1.5rem;
+        min-height: 60vh;
 
         @include md {
-            padding-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
         &::after {
@@ -32,6 +36,9 @@
 
             @include md {
                 top: 7rem;
+                width: 100%;
+                opacity: 0.5;
+                filter: alpha(opacity = 50);
             }
         }
     }
@@ -68,7 +75,7 @@
         line-height: 2rem;
         width: 60%;
 
-        @include md {
+        @include sm {
             display: none;
         }
     }

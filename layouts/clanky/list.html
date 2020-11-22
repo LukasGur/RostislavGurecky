@@ -5,7 +5,7 @@
                 <h1 class="c-blog-list__title">{{ .Params.introduction.heading }}</h1>
                 <p class="c-blog-list__subtitle">{{ .Params.introduction.subheading }}</p>
             </div>
-            <a href="{{ .Params.introduction.button.url }}" class="u-btn u-btn--{{ .Params.introduction.button.type }}">{{ .Params.introduction.button.text }}</a>
+            <a href="{{ .Params.introduction.button.url }}" class="u-btn u-btn--{{ .Params.introduction.button.type }} c-blog-list__title-btn">{{ .Params.introduction.button.text }}</a>
         </div>
     </section>
 
@@ -31,7 +31,7 @@
                         {{ end }}
                     </div>
                     <div class="c-blog-list__buttons">
-                        {{ range .Params.list.buttons }}
+                        {{ range .Params.buttons }}
                         <a href="{{ .url }}" class="u-btn u-btn--{{ .type }}">{{ .text }}</a>
                         {{ end }}
                     </div>

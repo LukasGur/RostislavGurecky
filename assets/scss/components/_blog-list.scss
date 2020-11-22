@@ -6,11 +6,8 @@
         margin-bottom: 1.5rem;
         min-height: 60vh;
 
-        @include md {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+        @include sm {
+            padding-top: 7rem;
         }
 
         &::after {
@@ -57,13 +54,21 @@
         font-size: 4rem;
         line-height: 1.2em;
         color: map-get($colors, orange-dark );
+        animation-name: upToDownSlideIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
 
         @include lg {
             font-size: 3rem;
         }
 
         @include md {
-            font-size: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include sm {
+            font-size: 3rem;
         }
     }
 
@@ -74,9 +79,27 @@
         font-weight: 600;
         line-height: 2rem;
         width: 60%;
+        animation-name: upToDownSlideIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-delay: 0.5s;
 
         @include sm {
             display: none;
+        }
+    }
+
+    &__title-btn {
+        display: inline-block;
+        animation-name: fadeIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-delay: 1.2s;
+
+        @include sm {
+            animation-delay: 0.7s;
         }
     }
 
@@ -175,5 +198,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+
+        @include lg {
+            grid-template-columns: 1fr;
+        }
     }
 }

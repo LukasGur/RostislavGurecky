@@ -1,5 +1,6 @@
 # basic site settings
 title = "Finanční poradce Brno | Rostislav Gurecký"
+baseURL = "https://rostislavgurecky.eu/"
 summaryLength = 20
 
 # language settings

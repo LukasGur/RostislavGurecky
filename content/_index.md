@@ -68,19 +68,19 @@ whyMe:
     icon: shaking-hands
     text: Ke svým klientům volím individuální přístup. Na schůzce naslouchám Vašim
       potřebám a představám a společně pak hledáme optimální cestu k Vašim cílům.
-  - title: Přesně to, co potřebujete
+  - title: Nejvýhodnější podmínky
     icon: target
-    text: Díky <strong>velkému přehledu</strong> a&nbsp;<strong>individualitě</strong>
-      se kterou k Vám budu přistupovat dostanete <strong>přesně to co potřebujete</strong>
-      právě Vy!
-  - title: Moje služby jsou pro Vás zdarma
-    icon: postal-package
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat
-      consequatur molestias delectus autem libero iste perspiciatis provident.
+    text: Za svou dlouhou kariéru jsem získal perfektní přehled o produktech na trhu
+      s financemi. Tento přehled mi umožňuje nabídnout Vám ty nejlepší na trhu dostupné
+      podmínky.
   - title: Problémy se zabývám do hloubky
     icon: brain
     text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat rem similique
       distinctio itaque nam delectus.
+  - title: Moje služby jsou pro Vás zdarma
+    icon: postal-package
+    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat
+      consequatur molestias delectus autem libero iste perspiciatis provident.
 businessCard:
   heading: Má vizitka
   buttons:

@@ -64,6 +64,10 @@ whyMe:
     text: 'Co by ale byly znalosti bez zkušeností? V poskytování finančního poradenství
       působím již přes 20 let. Za tu dobu jsem nasbíral řadu cenných zkušeností, které
       Vám usnadní život. '
+  - title: Osobní přístup
+    icon: shaking-hands
+    text: Ke svým klientům volím individuální přístup. Na schůzce naslouchám Vašim
+      potřebám a představám a společně pak hledáme optimální cestu k Vašim cílům.
   - title: Přesně to, co potřebujete
     icon: target
     text: Díky <strong>velkému přehledu</strong> a&nbsp;<strong>individualitě</strong>
@@ -77,10 +81,6 @@ whyMe:
     icon: brain
     text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat rem similique
       distinctio itaque nam delectus.
-  - title: Sociální přístup
-    icon: shaking-hands
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat
-      consequatur molestias delectus autem libero iste
 businessCard:
   heading: Má vizitka
   buttons:

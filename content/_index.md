@@ -58,7 +58,7 @@ whyMe:
   - title: Certifikovaný znalec
     icon: diplom
     text: Mé odborné znalosti jsou podloženy certifikáty ČNB v oblasti investic, zprostředkování
-      úvěru, pojištění i penzijního spoření. Se mnou Vám neznalost nehrozí.
+      úvěru, pojištění i penzijního spoření. Se mnou Vám neznalost nehrozí!
   - title: Ostřílený voják
     icon: honor
     text: 'Co by ale byly znalosti bez zkušeností? V poskytování finančního poradenství

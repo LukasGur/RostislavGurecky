@@ -73,10 +73,6 @@ whyMe:
     text: Za svou dlouhou kariéru jsem získal perfektní přehled o produktech na trhu
       s financemi. Tento přehled mi umožňuje nabídnout Vám ty nejlepší na trhu dostupné
       podmínky.
-  - title: Problémy se zabývám do hloubky
-    icon: brain
-    text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat rem similique
-      distinctio itaque nam delectus.
   - title: Nejlepší věci jsou zadarmo
     icon: postal-package
     text: V duchu známého rčení, i mé rady a pomoc jsou pro Vás zcela zdarma. Stačí

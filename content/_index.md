@@ -55,6 +55,10 @@ whyMe:
     text: Proč ztrácet svůj drahocenný čas hledáním a srovnáváním ne vždy přehledných
       podmínek společností poskytujících finanční služby, když můžete mít k ruce odborníka,
       který má všechny potřebné informace v malíku.
+  - title: Certifikovaný znalec
+    icon: diplom
+    text: Mé odborné znalosti jsou podloženy certifikáty ČNB v oblasti investic, zprostředkování
+      úvěru, pojištění i penzijního spoření. Se mnou Vám neznalost nehrozí.
   - title: Přesně to, co potřebujete
     icon: target
     text: Díky <strong>velkému přehledu</strong> a&nbsp;<strong>individualitě</strong>
@@ -65,11 +69,6 @@ whyMe:
     text: Mám za sebou <strong>přes 20let zkušeností</strong>. Můžete si tedy být
       jistí, že máte na své straně <strong>člověka, který tomu skutečně rozumí</strong>
       a dokáže pro Vás <strong>vybojovat ty nejlepší podmínky</strong>.
-  - title: Jsem prověřený přímo ČNB
-    icon: diplom
-    text: Nemusíte se bát, že vám nějaké výhody kvůli mé neprověřenosti uniknou. Mám
-      licenci na všechny činnosti České Národní Banka a složil jsem všechny jejich
-      zkoušky.
   - title: Moje služby jsou pro Vás zdarma
     icon: postal-package
     text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat

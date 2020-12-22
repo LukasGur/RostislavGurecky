@@ -59,16 +59,16 @@ whyMe:
     icon: diplom
     text: Mé odborné znalosti jsou podloženy certifikáty ČNB v oblasti investic, zprostředkování
       úvěru, pojištění i penzijního spoření. Se mnou Vám neznalost nehrozí.
+  - title: Ostřílený voják
+    icon: honor
+    text: 'Co by ale byly znalosti bez zkušeností? V poskytování finančního poradenství
+      působím již přes 20 let. Za tu dobu jsem nasbíral řadu cenných zkušeností, které
+      Vám usnadní život. '
   - title: Přesně to, co potřebujete
     icon: target
     text: Díky <strong>velkému přehledu</strong> a&nbsp;<strong>individualitě</strong>
       se kterou k Vám budu přistupovat dostanete <strong>přesně to co potřebujete</strong>
       právě Vy!
-  - title: Ostřílený voják k&nbsp;vašim službám
-    icon: honor
-    text: Mám za sebou <strong>přes 20let zkušeností</strong>. Můžete si tedy být
-      jistí, že máte na své straně <strong>člověka, který tomu skutečně rozumí</strong>
-      a dokáže pro Vás <strong>vybojovat ty nejlepší podmínky</strong>.
   - title: Moje služby jsou pro Vás zdarma
     icon: postal-package
     text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat

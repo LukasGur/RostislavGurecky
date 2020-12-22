@@ -147,7 +147,7 @@
                     <label class="c-interest__textarea-label" for="textarea-note">Obsah zprávy</label>
                 </div>
 
-                <div class="g-recaptcha" data-sitekey="6LfpcuQZAAAAAGXkTwYtD9aBQyiaviWJSbaskEmE" data-callback="onRecaptchaTest" data-size="invisible">
+                <div class="g-recaptcha" data-sitekey="6Lf0UhAaAAAAAAmG3LDFcBDV3upNmZRb1VDm6OK7" data-callback="onRecaptchaTest" data-size="invisible">
                 </div>
                 
                 <div class="c-standard__footer t-mt-3rem">
@@ -168,7 +168,7 @@
          function onRecaptchaTest() {
             var form = $('#interest');
             $.post(form.attr('action'), form.serialize()).then(function() {
-                $('#interest').fadeOut(function () {
+                form.fadeOut(function () {
                     $('#msg-sent').fadeIn();
                 });
             });

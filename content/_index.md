@@ -50,6 +50,11 @@ whyMe:
     text: Zanechat kontakt
     url: "/mam-zajem"
   content:
+  - title: Šetřím Váš čas
+    icon: watch
+    text: Proč ztrácet svůj drahocenný čas hledáním a srovnáváním ne vždy přehledných
+      podmínek společností poskytujících finanční služby, když můžete mít k ruce odborníka,
+      který má všechny potřebné informace v malíku.
   - title: Přesně to, co potřebujete
     icon: target
     text: Díky <strong>velkému přehledu</strong> a&nbsp;<strong>individualitě</strong>

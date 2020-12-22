@@ -77,10 +77,10 @@ whyMe:
     icon: brain
     text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat rem similique
       distinctio itaque nam delectus.
-  - title: Moje služby jsou pro Vás zdarma
+  - title: Nejlepší věci jsou zadarmo
     icon: postal-package
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat
-      consequatur molestias delectus autem libero iste perspiciatis provident.
+    text: V duchu známého rčení, i mé rady a pomoc jsou pro Vás zcela zdarma. Stačí
+      si sjednat schůzku. A to se vyplatí!
 businessCard:
   heading: Má vizitka
   buttons:

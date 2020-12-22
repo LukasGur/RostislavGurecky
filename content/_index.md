@@ -8,7 +8,7 @@ introduction:
     type: white
     url: "#dovednosti"
 skills:
-  heading: Co dokážu zařídit.
+  heading: S čím Vám mohu pomoci?
   subheading: Vyberte si jednu z možností.
   buttons:
   - type: primary

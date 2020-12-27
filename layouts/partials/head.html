@@ -43,15 +43,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
     <!-- stylesheets -->
     {{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") }}
     {{ if eq hugo.Environment "production" }}
         {{ $style = $style | fingerprint }}
     {{ end }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <!-- preload font -->
+    <link rel="preload" href="/font/Poppins-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/font/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Poppins-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/font/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Poppins-Italic.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/font/Poppins-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Poppins-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/font/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/font/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">

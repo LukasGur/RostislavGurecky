@@ -17,7 +17,7 @@
                 <div class="c-blog-post__author">
                     <h3 class="c-blog-post__author-title">Autor článku</h3>
                     <div class="c-blog-post__author-box">
-                        <img class="c-blog-post__author-photo" src="/images/rostislav_gurecky.JPG" alt="">
+                        <img class="c-blog-post__author-photo" height="736" width="570" src="/images/rostislav_gurecky.JPEG" alt="">
                         <div class="c-blog-post__author-informations">
                             <span class="c-blog-post__author-informations-item">Rostislav Gurecký</span>
                             <a class="c-blog-post__author-informations-item" href="mailto:{{ .Site.Params.contact.email.corporate }}">{{ .Site.Params.contact.email.corporate }}</a>
@@ -29,14 +29,14 @@
                 <div class="c-blog-post__author">
                     <h3 class="c-blog-post__author-title">Autor článku</h3>
                     <div class="c-blog-post__author-box">
-                        <img class="c-blog-post__author-photo" src="{{ .Params.author.photo }}" alt="Profilová fotka autora {{ .Params.author.name }}">
+                        <img class="c-blog-post__author-photo" height="736" width="570" src="{{ .Params.author.photo }}" alt="Profilová fotka autora {{ .Params.author.name }}">
                         <div class="c-blog-post__author-informations">
                             <span class="c-blog-post__author-informations-item">{{ .Params.author.name }}</span>
                             {{ if .Params.author.email }}
                             <a class="c-blog-post__author-informations-item" href="mailto:{{ .Params.author.email }}">{{ .Params.author.email }}</a>
                             {{ end }}
                             {{ if .Params.author.url }}
-                            <a class="c-blog-post__author-informations-item c-blog-post__author-informations-item--link" target="_blank" href="{{ .Params.author.url }}">{{ .Params.author.url }}</a>
+                            <a class="c-blog-post__author-informations-item c-blog-post__author-informations-item--link" target="_blank" rel="noopener" href="{{ .Params.author.url }}">{{ .Params.author.url }}</a>
                             {{ end }}
                         </div>
                     </div>

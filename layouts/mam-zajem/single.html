@@ -82,7 +82,7 @@
                 {{ range $element := .Params.interest }}
                     <div class="c-interest__checkbox-box t-d-none--important" data-selection="{{ .name }}">
                         {{ range $index, $item := (.subcategories) }}
-                            <input class="c-interest__radio" type="checkbox" id="{{ $element.name }}-{{ $index }}" name="{{ . }}">
+                            <input class="c-interest__radio" type="checkbox" id="{{ $element.name }}-{{ $index }}" value="Chci tohle" name="{{ . }}">
                             <label for="{{ $element.name }}-{{ $index }}" class="c-interest__label">
                                 <span class="c-interest__label-text">
                                     {{ . }}

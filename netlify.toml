@@ -43,6 +43,6 @@ HUGO_ENABLEGITINFO = "true"
       vr=(none)
     '''
 [[headers]]
-  for = "https://www.googletagmanager.com/*"
+  for = "https://www.googletagmanager.com/gtag/*"
   [headers.values]
-    Cache-Control = "private, max-age=931"
+    Cache-Control = "private, max-age=5000"

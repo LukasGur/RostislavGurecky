@@ -10,6 +10,7 @@ HUGO_ENABLEGITINFO = "true"
 [[headers]]
   for = "/*"
   [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
     X-Frame-Options = "deny"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
@@ -42,7 +43,3 @@ HUGO_ENABLEGITINFO = "true"
       vibrate=(none),
       vr=(none)
     '''
-[[headers]]
-  for = "https://www.googletagmanager.com/gtag/*"
-  [headers.values]
-    Cache-Control = "private, max-age=5000"

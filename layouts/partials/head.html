@@ -37,6 +37,12 @@
     <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
     <meta name="twitter:card" content="summary">
 
+    <!-- inline css -->
+    {{ $inlineCSS := resources.Get "scss/fonts.scss" | toCSS | resources.Minify }}
+    <style type="text/CSS">
+    {{ $inlineCSS.Content | safeCSS }}
+    </style>
+
     <!-- stylesheets -->
     {{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") }}
     {{ if eq hugo.Environment "production" }}

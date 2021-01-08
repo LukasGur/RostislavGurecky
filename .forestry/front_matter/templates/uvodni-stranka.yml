@@ -52,11 +52,6 @@ fields:
     label: Nadpis sekce
     config:
       required: true
-  - type: text
-    name: subheading
-    label: Podnadpis
-    config:
-      required: true
   - type: field_group_list
     name: buttons
     fields:

@@ -19,11 +19,6 @@ HUGO_ENABLEGITINFO = "true"
       max-age=31536000;
       includeSubDomains
     '''
-    #Content-Security-Policy = '''
-    #    default-src 'self';
-    #    style-src 'self' 'unsafe-inline';
-    #    img-src 'self'
-    #'''
     Permissions-Policy = '''
       accelerometer=(none),
       ambient-light-sensor=(none),
@@ -43,7 +38,3 @@ HUGO_ENABLEGITINFO = "true"
       vibrate=(none),
       vr=(none)
     '''
-[[headers]]
-  for = "https://www.googletagmanager.com/gtag/*"
-  [headers.values]
-    Cache-Control = "private, max-age=900"

@@ -64,7 +64,7 @@
         <div class="c-sticky-container">
         
             <div class="c-sticky-container__left">
-                <h2 class="c-sticky-container__title">{{ .Params.whyMe.heading | safeHTML }}</h2>
+                <h2 class="c-sticky-container__title">{{ .Params.whyMe.heading }}</h2>
             </div>
 
             <div class="c-sticky-container__right c-standard__2-columns">
@@ -72,9 +72,9 @@
                 {{ range .Params.whyMe.content }}
                 <div class="c-standard__content">
                     <h3 class="c-standard__subtitle u-icon u-icon--{{ .icon }}">
-                        {{ .title | safeHTML }}
+                        {{ .title }}
                     </h3>
-                    <p class="c-standard__text">{{ .text | safeHTML }}</p>
+                    <p class="c-standard__text">{{ .text }}</p>
                 </div>
                 {{ end }}
 

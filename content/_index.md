@@ -9,7 +9,7 @@ introduction:
     url: "#dovednosti"
 skills:
   heading: S čím Vám mohu pomoci?
-  subheading: Vyberte si jednu z možností.
+  subheading: ''
   buttons:
   - type: primary
     text: Proč se mnou?

@@ -86,7 +86,7 @@ businessCard:
   poem: |-
     Dobrý den, <strong class="t-text--gray">Rostislav Gurecký</strong> jméno mé,
     těším se, až vaše finance zhodnotíme.
-    Vaši důvěru nezklamu,
+    Ve mě vloženou důvěru nezklamu,
     nejlepší nabídku pro Vás dostanu.
   profileImage: "/images/rostislav_gurecky.webp"
 

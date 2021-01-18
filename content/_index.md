@@ -85,9 +85,9 @@ businessCard:
     url: "/mam-zajem"
   poem: |-
     Dobrý den, <strong class="t-text--gray">Rostislav Gurecký</strong> jméno mé,
-    těším se, až vaše finance pořádně zhodnotíme.
-    Přísahám, že budu jednat vždy na rovinu,
-    bez ohledu na to, kolik za vaši důvěru dostanu.
+    těším se, až vaše finance zhodnotíme.
+    Ve mě vloženou důvěru nezklamu,
+    nejlepší nabídku pro Vás dostanu.
   profileImage: "/images/rostislav_gurecky.webp"
 
 ---

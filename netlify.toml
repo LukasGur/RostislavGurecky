@@ -20,21 +20,17 @@ HUGO_ENABLEGITINFO = "true"
       includeSubDomains
     '''
     Permissions-Policy = '''
-      accelerometer=(none),
-      ambient-light-sensor=(none),
-      autoplay=(none),
-      camera=(none),
-      encrypted-media=(none),
-      fullscreen=(none),
-      geolocation=(none),
-      gyroscope=(none),
-      magnetometer=(none),
-      microphone=(none),
-      midi=(none),
-      payment=(none),
-      picture-in-picture=(none),
-      speaker=(none),
-      usb=(none),
-      vibrate=(none),
-      vr=(none)
+      accelerometer=(),
+      autoplay=(),
+      camera=(),
+      encrypted-media=(),
+      fullscreen=(),
+      geolocation=(),
+      gyroscope=(),
+      magnetometer=(),
+      microphone=(),
+      midi=(),
+      payment=(),
+      picture-in-picture=(),
+      usb=()
     '''
